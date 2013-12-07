@@ -1,10 +1,17 @@
 #import "QuotesController.h"
+#import "FacebookIntegration.h"
+
 
 @interface QuotesController ()
 
 @end
 
 @implementation QuotesController
+
+
+- (IBAction)shareToFB:(id)sender {
+    [[[FacebookIntegration alloc] init] post];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
