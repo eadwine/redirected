@@ -1,18 +1,10 @@
-//
-//  FirstViewController.m
-//  Redirected
-//
-//  Created by Edvinas on 06/12/13.
-//  Copyright (c) 2013 Edvinas Sabaliauskas. All rights reserved.
-//
+#import "CountdownViewController.h"
 
-#import "FirstViewController.h"
-
-@interface FirstViewController ()
+@interface CountdownViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation CountdownViewController
 
 - (void)viewDidLoad
 {

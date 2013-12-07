@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
 		60D127D918521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
 		60D127DF18521B7A0086A8D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D127DD18521B7A0086A8D4 /* InfoPlist.strings */; };
 		60D127E118521B7A0086A8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127E018521B7A0086A8D4 /* main.m */; };
 		60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127E418521B7A0086A8D4 /* AppDelegate.m */; };
-		60D127E818521B7A0086A8D4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
 		60D127EB18521B7A0086A8D4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */; };
-		60D127EE18521B7A0086A8D4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127ED18521B7A0086A8D4 /* FirstViewController.m */; };
-		60D127F118521B7A0086A8D4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127F018521B7A0086A8D4 /* SecondViewController.m */; };
+		60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127ED18521B7A0086A8D4 /* CountdownViewController.m */; };
+		60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D127F018521B7A0086A8D4 /* AboutViewController.m */; };
 		60D127F318521B7A0086A8D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D127F218521B7A0086A8D4 /* Images.xcassets */; };
 		60D127FA18521B7A0086A8D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127F918521B7A0086A8D4 /* XCTest.framework */; };
 		60D127FB18521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60B2CB63185319470061C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60D127D118521B7A0086A8D4 /* Redirected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D127D418521B7A0086A8D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60D127D618521B7A0086A8D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,12 +47,11 @@
 		60D127E218521B7A0086A8D4 /* Redirected-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Redirected-Prefix.pch"; sourceTree = "<group>"; };
 		60D127E318521B7A0086A8D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60D127E418521B7A0086A8D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		60D127E718521B7A0086A8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60D127EA18521B7A0086A8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		60D127EC18521B7A0086A8D4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		60D127ED18521B7A0086A8D4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		60D127EF18521B7A0086A8D4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		60D127F018521B7A0086A8D4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		60D127EC18521B7A0086A8D4 /* CountdownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
+		60D127ED18521B7A0086A8D4 /* CountdownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
+		60D127EF18521B7A0086A8D4 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		60D127F018521B7A0086A8D4 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		60D127F218521B7A0086A8D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60D127F818521B7A0086A8D4 /* RedirectedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedirectedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D127F918521B7A0086A8D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -122,10 +121,10 @@
 				60D127E418521B7A0086A8D4 /* AppDelegate.m */,
 				60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */,
 				60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */,
-				60D127EC18521B7A0086A8D4 /* FirstViewController.h */,
-				60D127ED18521B7A0086A8D4 /* FirstViewController.m */,
-				60D127EF18521B7A0086A8D4 /* SecondViewController.h */,
-				60D127F018521B7A0086A8D4 /* SecondViewController.m */,
+				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
+				60D127ED18521B7A0086A8D4 /* CountdownViewController.m */,
+				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
+				60D127F018521B7A0086A8D4 /* AboutViewController.m */,
 				60D127F218521B7A0086A8D4 /* Images.xcassets */,
 				60D127DB18521B7A0086A8D4 /* Supporting Files */,
 			);
@@ -237,9 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */,
 				60D127EB18521B7A0086A8D4 /* Main_iPad.storyboard in Resources */,
 				60D127F318521B7A0086A8D4 /* Images.xcassets in Resources */,
-				60D127E818521B7A0086A8D4 /* Main_iPhone.storyboard in Resources */,
 				60D127DF18521B7A0086A8D4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D127F118521B7A0086A8D4 /* SecondViewController.m in Sources */,
+				60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,
-				60D127EE18521B7A0086A8D4 /* FirstViewController.m in Sources */,
+				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,8 +295,7 @@
 		60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				60D127E718521B7A0086A8D4 /* Base */,
-				60B2CB63185319470061C050 /* en */,
+				60B4E311185358B600401958 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";

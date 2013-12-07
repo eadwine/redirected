@@ -1,18 +1,10 @@
-//
-//  SecondViewController.m
-//  Redirected
-//
-//  Created by Edvinas on 06/12/13.
-//  Copyright (c) 2013 Edvinas Sabaliauskas. All rights reserved.
-//
+#import "AboutViewController.h"
 
-#import "SecondViewController.h"
-
-@interface SecondViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad
 {
