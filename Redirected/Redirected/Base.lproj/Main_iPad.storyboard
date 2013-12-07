@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="150"/>
+            <point key="canvasLocation" x="2313" y="-370"/>
         </scene>
         <!--About View Controller - Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -72,7 +72,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="1284"/>
+            <point key="canvasLocation" x="2314" y="764"/>
+        </scene>
+        <!--Quotes Controller - Quotes-->
+        <scene sceneID="pyc-k4-nki">
+            <objects>
+                <viewController title="Quotes" id="8Lt-MP-zfr" customClass="QuotesController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qs-be-lAk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quotes" image="second" id="l8u-Ry-bme"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8w-kT-emw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2305" y="2131"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -87,11 +102,12 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="8Lt-MP-zfr" kind="relationship" relationship="viewControllers" id="Hv4-1h-ZoK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="704"/>
+            <point key="canvasLocation" x="1167" y="192"/>
         </scene>
     </scenes>
     <resources>

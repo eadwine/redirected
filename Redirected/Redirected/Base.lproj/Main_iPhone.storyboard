@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Countdown View Controller - First-->
+        <!--Countdown View Controller - Countdown-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="CountdownViewController" sceneMemberID="viewController">
+                <viewController title="Countdown" id="CZ4-MO-1fc" customClass="CountdownViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="195" y="-491"/>
         </scene>
-        <!--About View Controller - Second-->
+        <!--About View Controller - About-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController title="About" id="QUy-BD-bpt" customClass="AboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="196" width="280" height="88"/>
+                                <rect key="frame" x="20" y="182" width="280" height="152"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -63,6 +63,21 @@
             </objects>
             <point key="canvasLocation" x="195" y="99"/>
         </scene>
+        <!--Quotes Controller - Quates-->
+        <scene sceneID="iU0-rU-bhK">
+            <objects>
+                <viewController title="Quates" id="2kz-sC-Ozg" customClass="QuotesController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1i-Hl-YtM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quotes" image="second" id="Puw-kY-wYj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b12-hc-6Fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="689"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
@@ -74,8 +89,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="2kz-sC-Ozg" kind="relationship" relationship="viewControllers" id="DlU-nH-8G3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
