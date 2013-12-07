@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6076CC83185274C900D71FEB /* Redirected.app in Resources */ = {isa = PBXBuildFile; fileRef = 60D127D118521B7A0086A8D4 /* Redirected.app */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
 		60D127D918521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
@@ -37,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60B2CB63185319470061C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60D127D118521B7A0086A8D4 /* Redirected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D127D418521B7A0086A8D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60D127D618521B7A0086A8D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -239,7 +239,6 @@
 			files = (
 				60D127EB18521B7A0086A8D4 /* Main_iPad.storyboard in Resources */,
 				60D127F318521B7A0086A8D4 /* Images.xcassets in Resources */,
-				6076CC83185274C900D71FEB /* Redirected.app in Resources */,
 				60D127E818521B7A0086A8D4 /* Main_iPhone.storyboard in Resources */,
 				60D127DF18521B7A0086A8D4 /* InfoPlist.strings in Resources */,
 			);
@@ -298,6 +297,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				60D127E718521B7A0086A8D4 /* Base */,
+				60B2CB63185319470061C050 /* en */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redirected/Redirected-Prefix.pch";
 				INFOPLIST_FILE = "Redirected/Redirected-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,7 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redirected/Redirected-Prefix.pch";
 				INFOPLIST_FILE = "Redirected/Redirected-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
