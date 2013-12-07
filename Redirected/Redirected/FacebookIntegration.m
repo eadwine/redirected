@@ -20,20 +20,10 @@
 @synthesize fbSession = _fbSession;
 
 - (void) post {
-    if (!self.fbSession) {
-        NSArray *permissions = [NSArray arrayWithObjects:@"email", nil];
-        [FBSession openActiveSessionWithReadPermissions:permissions
-                   allowLoginUI:YES
-                   completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
-                                       /* handle success + failure in block */
-                                      if(error) {
-                                         NSLog(@"Error: %@", error.description);
-                                      } else {
-                                         self.fbSession = session;
-                                         NSLog(@"Success!");
-                                      }
-                                   }];
-    }
+    if ([self initSession]) {
+        // TODO notify that posting failed
+    };
+    
     
     NSURL* url = [NSURL URLWithString:@"http://www.imdb.com/title/tt2275946/"];
     FBShareDialogParams * params = [[FBShareDialogParams alloc] init];
@@ -50,6 +40,26 @@
                        NSLog(@"Success!");
                    }
      }];
+}
+
+- (BOOL)initSession {
+    if (!self.fbSession) {
+        NSArray *permissions = [NSArray arrayWithObjects:@"publish_actions", nil];
+        return [FBSession openActiveSessionWithPublishPermissions:permissions
+                          defaultAudience:FBSessionDefaultAudienceFriends
+                          allowLoginUI:YES
+                          completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                                          /* handle success + failure in block */
+                                          if(error) {
+                                              NSLog(@"Error: %@", error.description);
+                                          } else {
+                                              self.fbSession = session;
+                                              NSLog(@"Success!");
+                                          }
+                                      }];
+    } else {
+        return YES;
+    }
 }
 
 @end
