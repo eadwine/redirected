@@ -114,7 +114,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b12-hc-6Fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="688"/>
+            <point key="canvasLocation" x="195" y="763"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
