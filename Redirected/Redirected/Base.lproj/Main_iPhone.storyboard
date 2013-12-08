@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4o-bT-yOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="-554"/>
+            <point key="canvasLocation" x="643" y="-545"/>
         </scene>
         <!--About View Controller - About-->
         <scene sceneID="ot8-2e-RuS">
@@ -134,7 +134,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="99"/>
+            <point key="canvasLocation" x="-327" y="107"/>
         </scene>
     </scenes>
     <resources>
