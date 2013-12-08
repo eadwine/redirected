@@ -23,6 +23,8 @@
 		60D127FC18521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
 		60D1280418521B7A0086A8D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D1280218521B7A0086A8D4 /* InfoPlist.strings */; };
 		60D1280618521B7A0086A8D4 /* RedirectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D1280518521B7A0086A8D4 /* RedirectedTests.m */; };
+		F19C16411854DCC100740B2C /* ActorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16401854DCC100740B2C /* ActorInfo.m */; };
+		F19C16441854DFAB00740B2C /* Actors.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16431854DFAB00740B2C /* Actors.m */; };
 		F1DFBE0D185370950005304B /* QuotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* QuotesController.m */; };
 		F1DFBF2D18537B500005304B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DFBE1118537B4F0005304B /* FacebookSDK.framework */; };
 		F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* FacebookIntegration.m */; };
@@ -61,6 +63,10 @@
 		60D1280118521B7A0086A8D4 /* RedirectedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedirectedTests-Info.plist"; sourceTree = "<group>"; };
 		60D1280318521B7A0086A8D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60D1280518521B7A0086A8D4 /* RedirectedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedirectedTests.m; sourceTree = "<group>"; };
+		F19C163F1854DCC100740B2C /* ActorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorInfo.h; sourceTree = "<group>"; };
+		F19C16401854DCC100740B2C /* ActorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorInfo.m; sourceTree = "<group>"; };
+		F19C16421854DFAB00740B2C /* Actors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actors.h; sourceTree = "<group>"; };
+		F19C16431854DFAB00740B2C /* Actors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actors.m; sourceTree = "<group>"; };
 		F1DFBE0B185370950005304B /* QuotesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesController.h; sourceTree = "<group>"; };
 		F1DFBE0C185370950005304B /* QuotesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesController.m; sourceTree = "<group>"; };
 		F1DFBE1118537B4F0005304B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -139,6 +145,10 @@
 				F1DFBFF718537EE40005304B /* FacebookIntegration.m */,
 				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
 				60D127F018521B7A0086A8D4 /* AboutViewController.m */,
+				F19C16421854DFAB00740B2C /* Actors.h */,
+				F19C16431854DFAB00740B2C /* Actors.m */,
+				F19C163F1854DCC100740B2C /* ActorInfo.h */,
+				F19C16401854DCC100740B2C /* ActorInfo.m */,
 				60D127F218521B7A0086A8D4 /* Images.xcassets */,
 				60D127DB18521B7A0086A8D4 /* Supporting Files */,
 			);
@@ -276,9 +286,11 @@
 				60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,
 				F1DFBE0D185370950005304B /* QuotesController.m in Sources */,
+				F19C16411854DCC100740B2C /* ActorInfo.m in Sources */,
 				F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */,
 				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
+				F19C16441854DFAB00740B2C /* Actors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)");
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redirected/Redirected-Prefix.pch";
 				INFOPLIST_FILE = "Redirected/Redirected-Info.plist";

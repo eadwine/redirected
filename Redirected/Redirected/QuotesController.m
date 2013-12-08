@@ -1,25 +1,20 @@
 #import "QuotesController.h"
 #import "FacebookIntegration.h"
+#import "Actors.h"
+#import "ActorInfo.h"
 
 
 @interface QuotesController ()
-@property(strong, nonatomic) NSDictionary *actors;
+
 @end
 
 @implementation QuotesController
 
 @synthesize authorTable = _authorTable;
-@synthesize actors = _actors;
+
 
 - (void)viewDidLoad
 {
-    self.actors = [[NSDictionary alloc] initWithObjects: [[NSArray alloc] initWithObjects:
-                                                            @"http://ia.media-imdb.com/images/M/MV5BMTczNTg2NDk0NV5BMl5BanBnXkFtZTcwMTA0MzA5OQ@@._V1_SX640_SY720_.jpg",
-                                                            @"http://ia.media-imdb.com/images/M/MV5BNDI5ODE2MTQ1MF5BMl5BanBnXkFtZTgwODYzOTYxMDE@._V1_SX640_SY720_.jpg",
-                                                            @"http://ia.media-imdb.com/images/M/MV5BMTY5MTAwNjk2NF5BMl5BanBnXkFtZTcwOTg3MTU3OA@@._V1_SX640_SY720_.jpg", nil]
-                                                  forKeys:[[NSArray alloc] initWithObjects:
-                                                           @"Vinnie Jones", @"Scot Williams", @"Gil Darnell", nil]];
-    
     self.authorTable.delegate = self;
     self.authorTable.dataSource = self;
     [self.authorTable reloadData];
@@ -31,7 +26,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Number of rows is the number of objects for the specified section.
-    return self.actors.count;
+    return [Actors all].count;
 }
 
 
@@ -48,9 +43,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
     }
 
-    cell.textLabel.text = [[[self.actors keyEnumerator] allObjects] objectAtIndex: indexPath.row];
+    ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
     
-    NSURL *url = [NSURL URLWithString: [self.actors objectForKey: cell.textLabel.text]];
+    cell.textLabel.text = actor.actorName;
+    
+    NSURL *url = [NSURL URLWithString: actor.remotePictureUrl];
     NSData *data = [NSData dataWithContentsOfURL:url];
     
     cell.imageView.image = [[UIImage alloc] initWithData:data];
