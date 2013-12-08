@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface FacebookIntegration : NSObject
 - (void) post: (NSString *) quote from: (NSString *) author;
