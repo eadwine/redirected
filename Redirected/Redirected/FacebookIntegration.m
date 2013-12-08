@@ -7,7 +7,6 @@
 //
 
 #import "FacebookIntegration.h"
-#import <FacebookSDK/FacebookSDK.h>
 
 @interface  FacebookIntegration ()
 
