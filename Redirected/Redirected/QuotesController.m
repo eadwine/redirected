@@ -40,12 +40,13 @@
     static NSString *MyIdentifier = @"MyReuseIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
     }
 
     ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
     
     cell.textLabel.text = actor.actorName;
+    cell.detailTextLabel.text = actor.roleName;
     
     NSURL *url = [NSURL URLWithString: actor.remotePictureUrl];
     NSData *data = [NSData dataWithContentsOfURL:url];
