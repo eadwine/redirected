@@ -34,13 +34,23 @@
             </objects>
             <point key="canvasLocation" x="195" y="-545"/>
         </scene>
+        <!--View Controller - Repertoire-->
+        <scene sceneID="GkW-i7-UX5">
+            <objects>
+                <viewController id="VeM-mD-aeM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Repertoire" id="N4u-2K-ogi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4o-bT-yOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="-554"/>
+        </scene>
         <!--About View Controller - About-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="About" id="QUy-BD-bpt" customClass="AboutViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="QUy-BD-bpt" customClass="AboutViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" id="lBm-cP-zTd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="DcM-Fx-MKR">
                                 <rect key="frame" x="20" y="27" width="280" height="231"/>
@@ -62,11 +72,11 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="182" width="280" height="152"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" allowsInlineMediaPlayback="NO" keyboardDisplayRequiresUserAction="NO" id="m9b-r7-asa">
+                                <rect key="frame" x="40" y="332" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="600"/>
@@ -80,22 +90,12 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
             </objects>
             <point key="canvasLocation" x="195" y="107"/>
         </scene>
-        <!--View Controller - Other-->
-        <scene sceneID="H2m-a4-hBR">
-            <objects>
-                <viewController id="fy3-1i-29K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Other" id="ueZ-no-8Vf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhu-5d-U2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="195" y="756"/>
-        </scene>
-        <!--Quotes Controller - Quates-->
+        <!--Quotes Controller - Quotes-->
         <scene sceneID="iU0-rU-bhK">
             <objects>
-                <viewController title="Quates" id="2kz-sC-Ozg" customClass="QuotesController" sceneMemberID="viewController">
+                <viewController title="Quotes" id="2kz-sC-Ozg" customClass="QuotesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j1i-Hl-YtM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ioa-Tl-CfE">
@@ -131,7 +131,6 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="2kz-sC-Ozg" kind="relationship" relationship="viewControllers" id="DlU-nH-8G3"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="fy3-1i-29K" kind="relationship" relationship="viewControllers" id="dzN-tV-A9Q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
