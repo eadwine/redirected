@@ -10,18 +10,18 @@
             <objects>
                 <viewController title="Countdown" id="CZ4-MO-1fc" customClass="CountdownViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Countdown" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Zhg-ve-WU7">
-                                <rect key="frame" x="20" y="132" width="280" height="42"/>
+                                <rect key="frame" x="20" y="159" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate." textAlignment="center" id="tZ3-Hv-Q7E">
-                                <rect key="frame" x="20" y="196" width="280" height="88"/>
+                                <rect key="frame" x="20" y="240" width="280" height="88"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="-491"/>
+            <point key="canvasLocation" x="195" y="-545"/>
         </scene>
         <!--About View Controller - About-->
         <scene sceneID="ot8-2e-RuS">
@@ -42,10 +42,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="29h-N2-YGT">
-                                <rect key="frame" x="20" y="132" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="DcM-Fx-MKR">
+                                <rect key="frame" x="20" y="27" width="280" height="231"/>
+                                <string key="text">REDIRECTED is an outrageous hangover-meets-guy-ritchie type criminal action comedy with a distinctive flavor of Eastern European exotic. It tells a story of four friends turned first-time robbers – John, Ben, Tim and Michael – who accidentally get stranded in a middle-of-nowhere Eastern European country and have to fight their way back home through the land of whores, smugglers, dirty cops, cheap beer and sick fantasies. In order to save their asses, friends must not only overcome an ultimate culture shock experience, but also rediscover their friendship.
+
+The plan seemed 100% bulletproof – they take over an illegal casino in London, get the money, catch a plane to Malaysia and get lost in mind-blowing exotics of emerald jungle, golden beaches, cheap alcohol and teenage sex. The plan was a genius, and it worked. Almost.
+
+They took over a casino and they got the money – around one million pounds in cash. But the bad guys started shooting. Michael freaked-out and tried to back away. Tim had no chance but to beat sense into him with a fire extinguisher, which resulted in Michael boarding a plane senseless. The plane took off and… And then a volcano in Iceland started spewing ash like crazy and all the flights had to be grounded. This is how John, Ben, Tim and Michael got stranded in some post-soviet Eastern European country with an unpronounceable name and sick attitude towards everything.
+
+That’s where all the fun starts.
+
+Emilis Velyvis – one of the most popular and controversial Lithuanian directors, especially known for movies ZERO and ZERO II, both of which were huge domestic hits.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="6"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="29h-N2-YGT">
+                                <rect key="frame" x="20" y="309" width="280" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,13 +68,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="600"/>
+                    </scrollView>
                     <tabBarItem key="tabBarItem" title="About" image="second" id="Z7h-1E-pvt"/>
+                    <connections>
+                        <outlet property="youTubeView" destination="m9b-r7-asa" id="V2f-n6-K56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="99"/>
+            <point key="canvasLocation" x="195" y="107"/>
+        </scene>
+        <!--View Controller - Other-->
+        <scene sceneID="H2m-a4-hBR">
+            <objects>
+                <viewController id="fy3-1i-29K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Other" id="ueZ-no-8Vf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhu-5d-U2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="756"/>
         </scene>
         <!--Quotes Controller - Quates-->
         <scene sceneID="iU0-rU-bhK">
@@ -104,6 +131,7 @@
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="2kz-sC-Ozg" kind="relationship" relationship="viewControllers" id="DlU-nH-8G3"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="fy3-1i-29K" kind="relationship" relationship="viewControllers" id="dzN-tV-A9Q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -118,6 +146,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
