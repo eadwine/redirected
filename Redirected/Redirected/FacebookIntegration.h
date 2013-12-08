@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface FacebookIntegration : NSObject
-- (void)postFromView:(UIViewController *) view;
+- (void) post: (NSString *) quote from: (NSString *) author;
 @end

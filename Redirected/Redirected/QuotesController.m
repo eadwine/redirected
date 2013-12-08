@@ -9,7 +9,7 @@
 @implementation QuotesController
 
 - (IBAction)shareToFB:(id)sender {
-    [[[FacebookIntegration alloc] init] postFromView:self];
+    [[[FacebookIntegration alloc] init] post:@"Something funny" from: @"Author"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
