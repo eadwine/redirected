@@ -8,9 +8,8 @@
 
 @implementation QuotesController
 
-
 - (IBAction)shareToFB:(id)sender {
-    [[[FacebookIntegration alloc] init] post];
+    [[[FacebookIntegration alloc] init] postFromView:self];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

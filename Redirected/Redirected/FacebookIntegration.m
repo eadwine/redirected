@@ -19,27 +19,40 @@
 
 @synthesize fbSession = _fbSession;
 
-- (void) post {
-    if ([self initSession]) {
-        // TODO notify that posting failed
-    };
-    
-    
+- (void) postFromView: (UIViewController *) view {
     NSURL* url = [NSURL URLWithString:@"http://www.imdb.com/title/tt2275946/"];
     FBShareDialogParams * params = [[FBShareDialogParams alloc] init];
     params.link = url;
     params.name = @"Quote from movie Redirected";
     params.description = @"some parameter";
     
-    [FBDialogs presentShareDialogWithParams:params
-               clientState:nil
-               handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-                   if(error) {
-                       NSLog(@"Error: %@", error.description);
-                   } else {
-                       NSLog(@"Success!");
-                   }
-     }];
+    if ([FBDialogs canPresentShareDialogWithParams:params]) {
+        [FBDialogs presentShareDialogWithParams:params
+                   clientState:nil
+                   handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+                           if(error) {
+                             NSLog(@"Error: %@", error.description);
+                           } else {
+                             NSLog(@"Success!");
+                           }
+                         }];
+
+    } else {
+        if ([self initSession]) {
+            if ([FBDialogs canPresentOSIntegratedShareDialogWithSession: self.fbSession]) {
+                [FBDialogs presentOSIntegratedShareDialogModallyFrom: view
+                           session: self.fbSession
+                           initialText:@"Quote from movie Redirected"
+                           images:nil
+                           urls:nil
+                           handler:^(FBOSIntegratedShareDialogResult result, NSError *error) {
+                               // TODO
+                           }];
+            }
+        } else {
+            // TODO notify that posting failed
+        };
+    };
 }
 
 - (BOOL)initSession {
