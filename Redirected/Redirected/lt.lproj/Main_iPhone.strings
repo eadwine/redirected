@@ -1,0 +1,48 @@
+
+/* Class = "IBUINavigationItem"; title = "Aktorius"; ObjectID = "17s-e4-SqG"; */
+"17s-e4-SqG.title" = "Aktorius";
+
+/* Class = "IBUILabel"; text = "Videos"; ObjectID = "29h-N2-YGT"; */
+"29h-N2-YGT.text" = "Videos";
+
+/* Class = "IBUIViewController"; title = "Quotes"; ObjectID = "2kz-sC-Ozg"; */
+"2kz-sC-Ozg.title" = "Quotes";
+
+/* Class = "IBUINavigationItem"; title = "Paveikslai"; ObjectID = "6vE-95-EWp"; */
+"6vE-95-EWp.title" = "Paveikslai";
+
+/* Class = "IBUITabBarItem"; title = "Images"; ObjectID = "AoB-Kk-1Hm"; */
+"AoB-Kk-1Hm.title" = "Images";
+
+/* Class = "IBUIViewController"; title = "Countdown"; ObjectID = "CZ4-MO-1fc"; */
+"CZ4-MO-1fc.title" = "Countdown";
+
+/* Class = "IBUITextView"; text = "REDIRECTED is an outrageous hangover-meets-guy-ritchie type criminal action comedy with a distinctive flavor of Eastern European exotic. It tells a story of four friends turned first-time robbers – John, Ben, Tim and Michael – who accidentally get stranded in a middle-of-nowhere Eastern European country and have to fight their way back home through the land of whores, smugglers, dirty cops, cheap beer and sick fantasies. In order to save their asses, friends must not only overcome an ultimate culture shock experience, but also rediscover their friendship.\n\nThe plan seemed 100% bulletproof – they take over an illegal casino in London, get the money, catch a plane to Malaysia and get lost in mind-blowing exotics of emerald jungle, golden beaches, cheap alcohol and teenage sex. The plan was a genius, and it worked. Almost.\n\nThey took over a casino and they got the money – around one million pounds in cash. But the bad guys started shooting. Michael freaked-out and tried to back away. Tim had no chance but to beat sense into him with a fire extinguisher, which resulted in Michael boarding a plane senseless. The plane took off and… And then a volcano in Iceland started spewing ash like crazy and all the flights had to be grounded. This is how John, Ben, Tim and Michael got stranded in some post-soviet Eastern European country with an unpronounceable name and sick attitude towards everything.\n\nThat’s where all the fun starts.\n\nEmilis Velyvis – one of the most popular and controversial Lithuanian directors, especially known for movies ZERO and ZERO II, both of which were huge domestic hits."; ObjectID = "DcM-Fx-MKR"; */
+"DcM-Fx-MKR.text" = "REDIRECTED is an outrageous hangover-meets-guy-ritchie type criminal action comedy with a distinctive flavor of Eastern European exotic. It tells a story of four friends turned first-time robbers – John, Ben, Tim and Michael – who accidentally get stranded in a middle-of-nowhere Eastern European country and have to fight their way back home through the land of whores, smugglers, dirty cops, cheap beer and sick fantasies. In order to save their asses, friends must not only overcome an ultimate culture shock experience, but also rediscover their friendship.\n\nThe plan seemed 100% bulletproof – they take over an illegal casino in London, get the money, catch a plane to Malaysia and get lost in mind-blowing exotics of emerald jungle, golden beaches, cheap alcohol and teenage sex. The plan was a genius, and it worked. Almost.\n\nThey took over a casino and they got the money – around one million pounds in cash. But the bad guys started shooting. Michael freaked-out and tried to back away. Tim had no chance but to beat sense into him with a fire extinguisher, which resulted in Michael boarding a plane senseless. The plane took off and… And then a volcano in Iceland started spewing ash like crazy and all the flights had to be grounded. This is how John, Ben, Tim and Michael got stranded in some post-soviet Eastern European country with an unpronounceable name and sick attitude towards everything.\n\nThat’s where all the fun starts.\n\nEmilis Velyvis – one of the most popular and controversial Lithuanian directors, especially known for movies ZERO and ZERO II, both of which were huge domestic hits.";
+
+/* Class = "IBUINavigationItem"; title = "Paveikslas"; ObjectID = "Ljt-Qk-pRN"; */
+"Ljt-Qk-pRN.title" = "Paveikslas";
+
+/* Class = "IBUITabBarItem"; title = "Repertoire"; ObjectID = "N4u-2K-ogi"; */
+"N4u-2K-ogi.title" = "Repertoire";
+
+/* Class = "IBUITabBarItem"; title = "Quotes"; ObjectID = "Puw-kY-wYj"; */
+"Puw-kY-wYj.title" = "Quotes";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "W5G-8I-4HO"; */
+"W5G-8I-4HO.title" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "About"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "About";
+
+/* Class = "IBUILabel"; text = "Countdown"; ObjectID = "Zhg-ve-WU7"; */
+"Zhg-ve-WU7.text" = "Countdown";
+
+/* Class = "IBUITextView"; text = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate."; ObjectID = "tZ3-Hv-Q7E"; */
+"tZ3-Hv-Q7E.text" = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.";
+
+/* Class = "IBUITabBarItem"; title = "Countdown"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "Countdown";
+
+/* Class = "IBUINavigationItem"; title = "Aktoriai"; ObjectID = "uh5-JI-rCx"; */
+"uh5-JI-rCx.title" = "Aktoriai";

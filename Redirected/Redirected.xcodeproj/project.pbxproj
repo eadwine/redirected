@@ -44,6 +44,10 @@
 /* Begin PBXFileReference section */
 		6047FADC1854ECFF00C2B0D1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		60BAA1961856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60BAA1971856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		60BAA1981856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		60BAA1991856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60D127D118521B7A0086A8D4 /* Redirected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D127D418521B7A0086A8D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60D127D618521B7A0086A8D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -249,6 +253,7 @@
 				en,
 				Base,
 				he,
+				lt,
 			);
 			mainGroup = 60D127C818521B7A0086A8D4;
 			productRefGroup = 60D127D218521B7A0086A8D4 /* Products */;
@@ -323,6 +328,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				60D127DE18521B7A0086A8D4 /* en */,
+				60BAA1961856766D00CB3CE7 /* lt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				60B4E311185358B600401958 /* Base */,
+				60BAA1971856766D00CB3CE7 /* lt */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				60D127EA18521B7A0086A8D4 /* Base */,
+				60BAA1981856766D00CB3CE7 /* lt */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -347,6 +355,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				60D1280318521B7A0086A8D4 /* en */,
+				60BAA1991856766D00CB3CE7 /* lt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -441,6 +450,7 @@
 				INFOPLIST_FILE = "Redirected/Redirected-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -453,12 +463,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/edvinas/Documents/FacebookSDK,
+					/Users/Nerijus/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redirected/Redirected-Prefix.pch";
 				INFOPLIST_FILE = "Redirected/Redirected-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
