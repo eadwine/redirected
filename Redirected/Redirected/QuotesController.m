@@ -2,6 +2,7 @@
 #import "FacebookIntegration.h"
 #import "Actors.h"
 #import "ActorInfo.h"
+#import "ActorDetailViewController.h"
 
 
 @interface QuotesController ()
@@ -37,7 +38,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *MyIdentifier = @"MyReuseIdentifier";
+    static NSString *MyIdentifier = @"actorCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
@@ -53,6 +54,12 @@
     
     cell.imageView.image = [[UIImage alloc] initWithData:data];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
+    
+    // TODO
 }
 
 
