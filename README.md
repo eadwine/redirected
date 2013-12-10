@@ -1,2 +1,2 @@
-redirected
+redirected.com
 ==========
