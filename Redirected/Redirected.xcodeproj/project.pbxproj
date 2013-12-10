@@ -44,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6047FADC1854ECFF00C2B0D1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60BAA1961856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60BAA1971856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				F19EE871185798A5000DCBE4 /* Social.framework */,
-				6047FADC1854ECFF00C2B0D1 /* FacebookSDK.framework */,
 				60D127D418521B7A0086A8D4 /* Foundation.framework */,
 				60D127D618521B7A0086A8D4 /* CoreGraphics.framework */,
 				60D127D818521B7A0086A8D4 /* UIKit.framework */,
