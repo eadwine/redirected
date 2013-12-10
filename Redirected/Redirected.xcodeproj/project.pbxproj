@@ -27,7 +27,9 @@
 		F19C16411854DCC100740B2C /* ActorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16401854DCC100740B2C /* ActorInfo.m */; };
 		F19C16441854DFAB00740B2C /* Actors.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16431854DFAB00740B2C /* Actors.m */; };
 		F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16461855002F00740B2C /* ActorDetailViewController.m */; };
-		F1DFBE0D185370950005304B /* QuotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* QuotesController.m */; };
+		F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86C1857864B000DCBE4 /* QuoteController.m */; };
+		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
+		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
 		F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* FacebookIntegration.m */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +73,12 @@
 		F19C16431854DFAB00740B2C /* Actors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actors.m; sourceTree = "<group>"; };
 		F19C16451855002F00740B2C /* ActorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorDetailViewController.h; sourceTree = "<group>"; usesTabs = 0; };
 		F19C16461855002F00740B2C /* ActorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorDetailViewController.m; sourceTree = "<group>"; };
-		F1DFBE0B185370950005304B /* QuotesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesController.h; sourceTree = "<group>"; };
-		F1DFBE0C185370950005304B /* QuotesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesController.m; sourceTree = "<group>"; };
+		F19EE86B1857864B000DCBE4 /* QuoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteController.h; path = ../QuoteController.h; sourceTree = "<group>"; };
+		F19EE86C1857864B000DCBE4 /* QuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteController.m; path = ../QuoteController.m; sourceTree = "<group>"; };
+		F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGeneratorController.h; path = ../QuoteGeneratorController.h; sourceTree = "<group>"; };
+		F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteGeneratorController.m; path = ../QuoteGeneratorController.m; sourceTree = "<group>"; };
+		F1DFBE0B185370950005304B /* ActorListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorListController.h; sourceTree = "<group>"; };
+		F1DFBE0C185370950005304B /* ActorListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorListController.m; sourceTree = "<group>"; };
 		F1DFBFF618537EE40005304B /* FacebookIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookIntegration.h; sourceTree = "<group>"; };
 		F1DFBFF718537EE40005304B /* FacebookIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookIntegration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,10 +148,14 @@
 				60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */,
 				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
 				60D127ED18521B7A0086A8D4 /* CountdownViewController.m */,
-				F1DFBE0B185370950005304B /* QuotesController.h */,
-				F1DFBE0C185370950005304B /* QuotesController.m */,
+				F1DFBE0B185370950005304B /* ActorListController.h */,
+				F1DFBE0C185370950005304B /* ActorListController.m */,
 				F19C16451855002F00740B2C /* ActorDetailViewController.h */,
 				F19C16461855002F00740B2C /* ActorDetailViewController.m */,
+				F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */,
+				F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */,
+				F19EE86B1857864B000DCBE4 /* QuoteController.h */,
+				F19EE86C1857864B000DCBE4 /* QuoteController.m */,
 				F1DFBFF618537EE40005304B /* FacebookIntegration.h */,
 				F1DFBFF718537EE40005304B /* FacebookIntegration.m */,
 				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
@@ -288,9 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */,
 				60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,
-				F1DFBE0D185370950005304B /* QuotesController.m in Sources */,
+				F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */,
+				F1DFBE0D185370950005304B /* ActorListController.m in Sources */,
 				F19C16411854DCC100740B2C /* ActorInfo.m in Sources */,
 				F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */,
 				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,

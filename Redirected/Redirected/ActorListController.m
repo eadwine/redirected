@@ -1,24 +1,21 @@
-#import "QuotesController.h"
+#import "ActorListController.h"
 #import "FacebookIntegration.h"
 #import "Actors.h"
 #import "ActorInfo.h"
 #import "ActorDetailViewController.h"
 
 
-@interface QuotesController ()
-
+@interface ActorListController ()
+@property (weak, nonatomic) IBOutlet UITableView *actorTable;
 @end
 
-@implementation QuotesController
-
-@synthesize authorTable = _authorTable;
-
+@implementation ActorListController
 
 - (void)viewDidLoad
 {
-    self.authorTable.delegate = self;
-    self.authorTable.dataSource = self;
-    [self.authorTable reloadData];
+    self.actorTable.delegate = self;
+    self.actorTable.dataSource = self;
+    [self.actorTable reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -60,6 +57,10 @@
     //ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
     
     // TODO
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // TODO set required actor
 }
 
 
