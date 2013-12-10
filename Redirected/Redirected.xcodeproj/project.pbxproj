@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6047FADD1854ECFF00C2B0D1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6047FADC1854ECFF00C2B0D1 /* FacebookSDK.framework */; };
 		60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
@@ -29,8 +28,9 @@
 		F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16461855002F00740B2C /* ActorDetailViewController.m */; };
 		F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86C1857864B000DCBE4 /* QuoteController.m */; };
 		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
+		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
 		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
-		F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* FacebookIntegration.m */; };
+		F1DFBFF818537EE40005304B /* SocialIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* SocialIntegration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +81,11 @@
 		F19EE86C1857864B000DCBE4 /* QuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteController.m; path = ../QuoteController.m; sourceTree = "<group>"; };
 		F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGeneratorController.h; path = ../QuoteGeneratorController.h; sourceTree = "<group>"; };
 		F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteGeneratorController.m; path = ../QuoteGeneratorController.m; sourceTree = "<group>"; };
+		F19EE871185798A5000DCBE4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F1DFBE0B185370950005304B /* ActorListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorListController.h; sourceTree = "<group>"; };
 		F1DFBE0C185370950005304B /* ActorListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorListController.m; sourceTree = "<group>"; };
-		F1DFBFF618537EE40005304B /* FacebookIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookIntegration.h; sourceTree = "<group>"; };
-		F1DFBFF718537EE40005304B /* FacebookIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookIntegration.m; sourceTree = "<group>"; };
+		F1DFBFF618537EE40005304B /* SocialIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialIntegration.h; sourceTree = "<group>"; };
+		F1DFBFF718537EE40005304B /* SocialIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialIntegration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6047FADD1854ECFF00C2B0D1 /* FacebookSDK.framework in Frameworks */,
+				F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */,
 				60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */,
 				60D127D918521B7A0086A8D4 /* UIKit.framework in Frameworks */,
 				60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */,
@@ -134,6 +135,7 @@
 		60D127D318521B7A0086A8D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F19EE871185798A5000DCBE4 /* Social.framework */,
 				6047FADC1854ECFF00C2B0D1 /* FacebookSDK.framework */,
 				60D127D418521B7A0086A8D4 /* Foundation.framework */,
 				60D127D618521B7A0086A8D4 /* CoreGraphics.framework */,
@@ -160,8 +162,8 @@
 				F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */,
 				F19EE86B1857864B000DCBE4 /* QuoteController.h */,
 				F19EE86C1857864B000DCBE4 /* QuoteController.m */,
-				F1DFBFF618537EE40005304B /* FacebookIntegration.h */,
-				F1DFBFF718537EE40005304B /* FacebookIntegration.m */,
+				F1DFBFF618537EE40005304B /* SocialIntegration.h */,
+				F1DFBFF718537EE40005304B /* SocialIntegration.m */,
 				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
 				60D127F018521B7A0086A8D4 /* AboutViewController.m */,
 				F19C16421854DFAB00740B2C /* Actors.h */,
@@ -309,7 +311,7 @@
 				F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */,
 				F1DFBE0D185370950005304B /* ActorListController.m in Sources */,
 				F19C16411854DCC100740B2C /* ActorInfo.m in Sources */,
-				F1DFBFF818537EE40005304B /* FacebookIntegration.m in Sources */,
+				F1DFBFF818537EE40005304B /* SocialIntegration.m in Sources */,
 				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,
 				F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,

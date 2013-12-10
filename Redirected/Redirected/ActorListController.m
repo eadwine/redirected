@@ -1,5 +1,5 @@
 #import "ActorListController.h"
-#import "FacebookIntegration.h"
+#import "SocialIntegration.h"
 #import "Actors.h"
 #import "ActorInfo.h"
 #import "ActorDetailViewController.h"

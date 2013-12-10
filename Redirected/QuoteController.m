@@ -7,25 +7,26 @@
 //
 
 #import "QuoteController.h"
-#import "FacebookIntegration.h"
+#import "SocialIntegration.h"
+#import <Social/Social.h>
 
 @interface QuoteController ()
-@property(strong, nonatomic) FacebookIntegration *facebookIntegration;
+@property(strong, nonatomic) SocialIntegration *socialIntegration;
 @end
 
 @implementation QuoteController
 
-@synthesize facebookIntegration = _facebookIntegration;
+@synthesize socialIntegration = _socialIntegration;
 
 - (IBAction)shareOnFacebook {
-    [self.facebookIntegration post:@"Test quote" from:@"Test author"];
+    [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:@"Test quote"] animated:YES completion:nil];
 }
 
-- (FacebookIntegration *) facebookIntegration {
-    if (!_facebookIntegration) {
-        _facebookIntegration = [[FacebookIntegration alloc] init];
+- (SocialIntegration *) socialIntegration {
+    if (!_socialIntegration) {
+        _socialIntegration = [[SocialIntegration alloc] init];
     }
-    return _facebookIntegration;
+    return _socialIntegration;
 }
 
 @end

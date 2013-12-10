@@ -184,6 +184,10 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
         <scene sceneID="iU0-rU-bhK">
             <objects>
                 <viewController id="2kz-sC-Ozg" customClass="ActorListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tcR-wj-kvG"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFf-bB-m37"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j1i-Hl-YtM">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -221,6 +225,10 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
         <scene sceneID="pZN-xK-AKh">
             <objects>
                 <viewController id="mGb-i6-dXL" customClass="QuoteController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dvl-hw-WcN"/>
+                        <viewControllerLayoutGuide type="bottom" id="J9J-os-ir0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lEM-6U-1bA">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -329,6 +337,10 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
         <scene sceneID="h4Q-5Y-CEQ">
             <objects>
                 <viewController id="Y1G-RU-37x" customClass="QuoteGeneratorController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKb-4D-W0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="821-c9-6Bb"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="clU-fW-O24">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -352,13 +364,13 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                     <action selector="randomQuoteButtonPressed" destination="Y1G-RU-37x" eventType="touchUpInside" id="KbH-Mo-LUR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Papurtykyte savo įrenginį ir gaukite atsitiktinę frazę if filmo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j8l-G5-hsc">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Papurtykite savo įrenginį ir gaukite atsitiktinę frazę iš filmo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="j8l-G5-hsc">
                                 <rect key="frame" x="54" y="77" width="213" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arba spauskite mygtuką &quot;Atsitikitinė frazė&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NjS-09-2ZE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arba spauskite mygtuką &quot;Atsitikitinė frazė&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="NjS-09-2ZE">
                                 <rect key="frame" x="54" y="226" width="213" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
