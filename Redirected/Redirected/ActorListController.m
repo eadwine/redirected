@@ -1,23 +1,21 @@
-#import "QuotesController.h"
-#import "FacebookIntegration.h"
+#import "ActorListController.h"
+#import "SocialIntegration.h"
 #import "Actors.h"
 #import "ActorInfo.h"
+#import "ActorDetailViewController.h"
 
 
-@interface QuotesController ()
-
+@interface ActorListController ()
+@property (weak, nonatomic) IBOutlet UITableView *actorTable;
 @end
 
-@implementation QuotesController
-
-@synthesize authorTable = _authorTable;
-
+@implementation ActorListController
 
 - (void)viewDidLoad
 {
-    self.authorTable.delegate = self;
-    self.authorTable.dataSource = self;
-    [self.authorTable reloadData];
+    self.actorTable.delegate = self;
+    self.actorTable.dataSource = self;
+    [self.actorTable reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,7 +35,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *MyIdentifier = @"MyReuseIdentifier";
+    static NSString *MyIdentifier = @"actorCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
@@ -53,6 +51,16 @@
     
     cell.imageView.image = [[UIImage alloc] initWithData:data];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
+    
+    // TODO
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // TODO set required actor
 }
 
 

@@ -10,11 +10,6 @@
 
 @implementation ActorInfo
 
-@synthesize actorName = _actorName;
-@synthesize roleName = _roleName;
-@synthesize quotes = _quotes;
-@synthesize remotePictureUrl = _remotePictureUrl;
-
 - (id) initWithName:(NSString *) name
            roleName:(NSString *) roleName {
     
