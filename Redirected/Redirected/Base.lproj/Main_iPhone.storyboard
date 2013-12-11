@@ -24,7 +24,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="dienos iki premjeros" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Hv-Q7E">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="days till premiere" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Hv-Q7E">
                                 <rect key="frame" x="20" y="206" width="280" height="38"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -159,7 +159,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1746" y="786"/>
         </scene>
-        <!--About View Controller - Apie-->
+        <!--About View Controller - About-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
                 <viewController id="QUy-BD-bpt" customClass="AboutViewController" sceneMemberID="viewController">
@@ -171,8 +171,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="59" width="280" height="182"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
+                                <rect key="frame" x="20" y="20" width="280" height="483"/>
                                 <string key="text">REDIRECTED is an outrageous hangover-meets-guy-ritchie type criminal action comedy with a distinctive flavor of Eastern European exotic. It tells a story of four friends turned first-time robbers – John, Ben, Tim and Michael – who accidentally get stranded in a middle-of-nowhere Eastern European country and have to fight their way back home through the land of whores, smugglers, dirty cops, cheap beer and sick fantasies. In order to save their asses, friends must not only overcome an ultimate culture shock experience, but also rediscover their friendship.
 
 The plan seemed 100% bulletproof – they take over an illegal casino in London, get the money, catch a plane to Malaysia and get lost in mind-blowing exotics of emerald jungle, golden beaches, cheap alcohol and teenage sex. The plan was a genius, and it worked. Almost.
@@ -182,13 +182,13 @@ They took over a casino and they got the money – around one million pounds in 
 That’s where all the fun starts.
 
 Emilis Velyvis – one of the most popular and controversial Lithuanian directors, especially known for movies ZERO and ZERO II, both of which were huge domestic hits.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="6"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </scrollView>
-                    <navigationItem key="navigationItem" title="Apie" id="Cij-9F-FlY"/>
+                    <navigationItem key="navigationItem" title="About" id="Cij-9F-FlY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,7 +223,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
             </objects>
             <point key="canvasLocation" x="1228" y="-669"/>
         </scene>
-        <!--View Controller - Faktai-->
+        <!--View Controller - Facts-->
         <scene sceneID="4Dy-Ps-W99">
             <objects>
                 <viewController id="yTs-rF-yXd" sceneMemberID="viewController">
@@ -236,13 +236,13 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Faktai" id="8pW-Y2-WOw"/>
+                    <navigationItem key="navigationItem" title="Facts" id="8pW-Y2-WOw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngD-Kp-kov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1746" y="-669"/>
         </scene>
-        <!--Actor List Controller - Aktoriai-->
+        <!--Actor List Controller - Actors-->
         <scene sceneID="iU0-rU-bhK">
             <objects>
                 <viewController id="2kz-sC-Ozg" customClass="ActorListController" sceneMemberID="viewController">
@@ -274,7 +274,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Aktoriai" id="uh5-JI-rCx"/>
+                    <navigationItem key="navigationItem" title="Actors" id="uh5-JI-rCx"/>
                     <connections>
                         <outlet property="actorTable" destination="m4T-3E-mnI" id="kVc-gT-NUx"/>
                     </connections>
@@ -308,9 +308,9 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b71-6d-gES">
-                                <rect key="frame" x="85" y="194" width="151" height="44"/>
+                                <rect key="frame" x="80" y="194" width="161" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dalintis Facebook">
+                                <state key="normal" title="Share on Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -326,7 +326,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
             </objects>
             <point key="canvasLocation" x="1228" y="1458"/>
         </scene>
-        <!--Actor Detail View Controller - Aktorius-->
+        <!--Actor Detail View Controller - Actor info-->
         <scene sceneID="chL-KA-fzn">
             <objects>
                 <viewController id="Ekq-Rd-5qY" customClass="ActorDetailViewController" sceneMemberID="viewController">
@@ -348,7 +348,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Aktorius" id="17s-e4-SqG"/>
+                    <navigationItem key="navigationItem" title="Actor info" id="17s-e4-SqG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xp1-CJ-Y5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,7 +391,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I00-EU-ID0">
                                 <rect key="frame" x="86" y="56" width="149" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Apie">
+                                <state key="normal" title="About">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -401,7 +401,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-ib-iXy">
                                 <rect key="frame" x="86" y="135" width="149" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Komanda">
+                                <state key="normal" title="Team">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -409,9 +409,9 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVM-08-T0z">
-                                <rect key="frame" x="86" y="213" width="149" height="44"/>
+                                <rect key="frame" x="86" y="212" width="149" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Galerija">
+                                <state key="normal" title="Gallery">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -429,9 +429,9 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3B-FE-F8M">
-                                <rect key="frame" x="86" y="377" width="149" height="44"/>
+                                <rect key="frame" x="86" y="366" width="149" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Faktai">
+                                <state key="normal" title="Facts">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -466,7 +466,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
             </objects>
             <point key="canvasLocation" x="195" y="1458"/>
         </scene>
-        <!--Quote Generator Controller - RĖŽK-->
+        <!--Quote Generator Controller - Quotes-->
         <scene sceneID="h4Q-5Y-CEQ">
             <objects>
                 <viewController id="Y1G-RU-37x" customClass="QuoteGeneratorController" sceneMemberID="viewController">
@@ -482,18 +482,18 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                                 <rect key="frame" x="54" y="284" width="213" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Atsitiktinė frazė"/>
+                                <state key="normal" title="Random"/>
                                 <connections>
                                     <action selector="randomQuoteButtonPressed" destination="Y1G-RU-37x" eventType="touchUpInside" id="KbH-Mo-LUR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Papurtykite savo įrenginį ir gaukite atsitiktinę frazę iš filmo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="j8l-G5-hsc">
-                                <rect key="frame" x="54" y="66" width="213" height="82"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to see random quote from the movie!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="j8l-G5-hsc">
+                                <rect key="frame" x="54" y="65" width="213" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arba spauskite mygtuką žemiau:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="NjS-09-2ZE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or press button below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="213" id="NjS-09-2ZE">
                                 <rect key="frame" x="54" y="255" width="213" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -509,7 +509,7 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RĖŽK" id="xt7-Ma-CCy"/>
+                    <navigationItem key="navigationItem" title="Quotes" id="xt7-Ma-CCy"/>
                     <connections>
                         <segue destination="mGb-i6-dXL" kind="push" identifier="ShowingQuote" id="wZE-Ad-Hjn"/>
                     </connections>
@@ -547,6 +547,6 @@ Emilis Velyvis – one of the most popular and controversial Lithuanian director
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Tf0-lc-yA8"/>
+        <segue reference="4Js-N1-6Qb"/>
     </inferredMetricsTieBreakers>
 </document>
