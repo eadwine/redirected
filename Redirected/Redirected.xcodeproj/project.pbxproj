@@ -14,6 +14,7 @@
 		60B02B561857CE0100EAB31C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B511857CE0100EAB31C /* Security.framework */; };
 		60B02B571857CE0100EAB31C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B521857CE0100EAB31C /* SystemConfiguration.framework */; };
 		60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
+		60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
 		60D127D918521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
@@ -92,6 +93,7 @@
 		60B02B511857CE0100EAB31C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		60B02B521857CE0100EAB31C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Redirected.xcdatamodel; sourceTree = "<group>"; };
 		60BAA1961856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60BAA1971856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
 		60BAA1981856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPad.strings; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
 				60D127ED18521B7A0086A8D4 /* CountdownViewController.m */,
 				F1DFBE0B185370950005304B /* ActorListController.h */,
+				60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */,
 				F1DFBE0C185370950005304B /* ActorListController.m */,
 				F19C16451855002F00740B2C /* ActorDetailViewController.h */,
 				F19C16461855002F00740B2C /* ActorDetailViewController.m */,
@@ -421,6 +424,7 @@
 				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,
 				F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
+				60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */,
 				F19C16441854DFAB00740B2C /* Actors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */,
+			);
+			currentVersion = 60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */;
+			path = Redirected.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60D127C918521B7A0086A8D4 /* Project object */;
 }
