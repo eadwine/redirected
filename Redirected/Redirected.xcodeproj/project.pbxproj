@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6084C835185A71D000A1255D /* RepertoireController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6084C834185A71D000A1255D /* RepertoireController.m */; };
 		60B02B4D1857CE0100EAB31C /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B441857CA6600EAB31C /* libRestKit.a */; };
 		60B02B531857CE0100EAB31C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B4E1857CE0100EAB31C /* CFNetwork.framework */; };
 		60B02B541857CE0100EAB31C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B4F1857CE0100EAB31C /* CoreData.framework */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6084C833185A71D000A1255D /* RepertoireController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepertoireController.h; sourceTree = "<group>"; };
+		6084C834185A71D000A1255D /* RepertoireController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepertoireController.m; sourceTree = "<group>"; };
 		60B02B3C1857CA6500EAB31C /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ../RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		60B02B4E1857CE0100EAB31C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		60B02B4F1857CE0100EAB31C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -225,6 +228,8 @@
 			children = (
 				60D127E318521B7A0086A8D4 /* AppDelegate.h */,
 				60D127E418521B7A0086A8D4 /* AppDelegate.m */,
+				6084C833185A71D000A1255D /* RepertoireController.h */,
+				6084C834185A71D000A1255D /* RepertoireController.m */,
 				60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */,
 				60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */,
 				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
@@ -443,6 +448,7 @@
 				F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
 				60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */,
+				6084C835185A71D000A1255D /* RepertoireController.m in Sources */,
 				F19C16441854DFAB00740B2C /* Actors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
