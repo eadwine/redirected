@@ -7,22 +7,44 @@
 //
 
 #import "QuoteController.h"
-#import "SocialIntegration.h"
-#import <Social/Social.h>
 
 @interface QuoteController ()
+
 @property(strong, nonatomic) SocialIntegration *socialIntegration;
+
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+
+- (NSString *) formattedQuote;
+
 @end
 
 @implementation QuoteController
 
 @synthesize socialIntegration = _socialIntegration;
 
-- (IBAction)shareOnFacebook {
-    [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:@"Test quote"] animated:YES completion:nil];
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.quoteLabel.text = [NSString stringWithFormat:@"\"%@\"", self.quote.text];
+    self.authorLabel.text = self.quote.author;
 }
 
-- (SocialIntegration *) socialIntegration {
+- (IBAction)shareOnFacebook
+{
+    [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:[self formattedQuote]
+                                                                              image:nil
+                                                                               link:[NSURL URLWithString:@"http://redirectedmovie.com"]] animated:YES completion:nil];
+}
+
+- (NSString *) formattedQuote
+{
+    return [NSString stringWithFormat:@"\"%@\" - %@, movie Redirected", self.quote.text, self.quote.author];
+}
+
+- (SocialIntegration *) socialIntegration
+{
     if (!_socialIntegration) {
         _socialIntegration = [[SocialIntegration alloc] init];
     }

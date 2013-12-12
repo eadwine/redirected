@@ -7,18 +7,20 @@
 //
 
 #import "QuoteGeneratorController.h"
+#import "QuoteController.h"
+#import "Quote.h"
+#import "Actors.h"
 
 @interface QuoteGeneratorController ()
-
+@property Quote *randomQuote;
 @end
 
 @implementation QuoteGeneratorController
 
-
 - (IBAction)randomQuoteButtonPressed
 {
-    // TODO generate random quote
-    [self showQuote:@"random"];
+    self.randomQuote = [Actors randomQuote];
+    [self showQuoteSeque];
 }
 
 - (BOOL)canBecomeFirstResponder
@@ -30,15 +32,19 @@
 {
     if (motion == UIEventSubtypeMotionShake)
     {
-        // TODO generate random quote
-        [self showQuote:@"test"];
+        self.randomQuote = [Actors randomQuote];
+        [self showQuoteSeque];
     }
 }
 
-- (void) showQuote:(NSString *) quote
+- (void) showQuoteSeque
 {
-    // TODO set quote delegate before proceding
     [self performSegueWithIdentifier:@"ShowingQuote" sender:self];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [segue.destinationViewController setQuote:self.randomQuote];
 }
 
 @end

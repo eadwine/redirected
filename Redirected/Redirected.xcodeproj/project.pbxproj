@@ -32,6 +32,7 @@
 		F19C16411854DCC100740B2C /* ActorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16401854DCC100740B2C /* ActorInfo.m */; };
 		F19C16441854DFAB00740B2C /* Actors.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16431854DFAB00740B2C /* Actors.m */; };
 		F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16461855002F00740B2C /* ActorDetailViewController.m */; };
+		F19E69A6185A30AC00B2CAB3 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E69A5185A30AC00B2CAB3 /* Quote.m */; };
 		F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86C1857864B000DCBE4 /* QuoteController.m */; };
 		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
 		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
@@ -125,6 +126,8 @@
 		F19C16431854DFAB00740B2C /* Actors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actors.m; sourceTree = "<group>"; };
 		F19C16451855002F00740B2C /* ActorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorDetailViewController.h; sourceTree = "<group>"; usesTabs = 0; };
 		F19C16461855002F00740B2C /* ActorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorDetailViewController.m; sourceTree = "<group>"; };
+		F19E69A4185A30AC00B2CAB3 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		F19E69A5185A30AC00B2CAB3 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
 		F19EE86B1857864B000DCBE4 /* QuoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteController.h; path = ../QuoteController.h; sourceTree = "<group>"; };
 		F19EE86C1857864B000DCBE4 /* QuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteController.m; path = ../QuoteController.m; sourceTree = "<group>"; };
 		F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGeneratorController.h; path = ../QuoteGeneratorController.h; sourceTree = "<group>"; };
@@ -225,27 +228,20 @@
 				60D127E418521B7A0086A8D4 /* AppDelegate.m */,
 				60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */,
 				60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */,
+				60D127F218521B7A0086A8D4 /* Images.xcassets */,
 				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
 				60D127ED18521B7A0086A8D4 /* CountdownViewController.m */,
 				F1DFBE0B185370950005304B /* ActorListController.h */,
 				F1DFBE0C185370950005304B /* ActorListController.m */,
 				F19C16451855002F00740B2C /* ActorDetailViewController.h */,
 				F19C16461855002F00740B2C /* ActorDetailViewController.m */,
-				F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */,
-				F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */,
-				F19EE86B1857864B000DCBE4 /* QuoteController.h */,
-				F19EE86C1857864B000DCBE4 /* QuoteController.m */,
-				F1DFBFF618537EE40005304B /* SocialIntegration.h */,
-				F1DFBFF718537EE40005304B /* SocialIntegration.m */,
 				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
 				60D127F018521B7A0086A8D4 /* AboutViewController.m */,
 				F1AC4E931858F55B00E90EBD /* VideoViewController.h */,
 				F1AC4E941858F55B00E90EBD /* VideoViewController.m */,
-				F19C16421854DFAB00740B2C /* Actors.h */,
-				F19C16431854DFAB00740B2C /* Actors.m */,
-				F19C163F1854DCC100740B2C /* ActorInfo.h */,
-				F19C16401854DCC100740B2C /* ActorInfo.m */,
-				60D127F218521B7A0086A8D4 /* Images.xcassets */,
+				F19E69A2185A2ACE00B2CAB3 /* quotes */,
+				F19E69A7185A30B900B2CAB3 /* util */,
+				F19E69A3185A306500B2CAB3 /* model */,
 				60D127DB18521B7A0086A8D4 /* Supporting Files */,
 			);
 			path = Redirected;
@@ -279,6 +275,39 @@
 				60D1280218521B7A0086A8D4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F19E69A2185A2ACE00B2CAB3 /* quotes */ = {
+			isa = PBXGroup;
+			children = (
+				F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */,
+				F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */,
+				F19EE86B1857864B000DCBE4 /* QuoteController.h */,
+				F19EE86C1857864B000DCBE4 /* QuoteController.m */,
+			);
+			name = quotes;
+			sourceTree = "<group>";
+		};
+		F19E69A3185A306500B2CAB3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F19C16421854DFAB00740B2C /* Actors.h */,
+				F19C16431854DFAB00740B2C /* Actors.m */,
+				F19C163F1854DCC100740B2C /* ActorInfo.h */,
+				F19C16401854DCC100740B2C /* ActorInfo.m */,
+				F19E69A4185A30AC00B2CAB3 /* Quote.h */,
+				F19E69A5185A30AC00B2CAB3 /* Quote.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F19E69A7185A30B900B2CAB3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F1DFBFF618537EE40005304B /* SocialIntegration.h */,
+				F1DFBFF718537EE40005304B /* SocialIntegration.m */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 		F1AC4E921858DA8F00E90EBD /* Fonts */ = {
@@ -430,6 +459,7 @@
 			files = (
 				F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */,
 				60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */,
+				F19E69A6185A30AC00B2CAB3 /* Quote.m in Sources */,
 				F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,
 				F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */,

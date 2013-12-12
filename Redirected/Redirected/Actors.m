@@ -7,10 +7,9 @@
 //
 
 #import "Actors.h"
-#import "ActorInfo.h"
 
 @interface Actors ()
-
++ (NSString *) randomActorNameContainingQuotes:(BOOL)withQuotes;
 @end
 
 static NSDictionary *actors;
@@ -22,13 +21,15 @@ static NSDictionary *actors;
         actors = [[NSMutableDictionary alloc] init];
         [actors setValue: [[ActorInfo alloc] initWithName:@"Vinnie Jones"
                                                  roleName:@"Golden Pole"
-                                                   quotes:nil
+                                                   quotes:[NSArray arrayWithObjects:
+                                                           [[Quote alloc] initWithText:@"grugh" fromAuthor:@"Vinnie Jones"], nil]
                                             remotePicture:@"http://ia.media-imdb.com/images/M/MV5BMTczNTg2NDk0NV5BMl5BanBnXkFtZTcwMTA0MzA5OQ@@._V1_SY317_CR14,0,214,317_.jpg"
-                ] forKey:@"Vinnie_Jones"];
+                ] forKey:@"Vinnie Jones"];
 
         [actors setValue: [[ActorInfo alloc] initWithName:@"Scot Williams"
                                                  roleName:@"Michael"
-                                                   quotes: nil
+                                                   quotes:[NSArray arrayWithObjects:
+                                                            [[Quote alloc] initWithText:@"more grugh!" fromAuthor:@"Scot Williams"], nil]
                                             remotePicture:@"http://ia.media-imdb.com/images/M/MV5BNDI5ODE2MTQ1MF5BMl5BanBnXkFtZTgwODYzOTYxMDE@._V1_SX214_CR0,0,214,317_.jpg"
                 ] forKey:@"Scot Williams"];
         
@@ -62,10 +63,41 @@ static NSDictionary *actors;
                                             remotePicture:@"http://ia.media-imdb.com/images/M/MV5BMTk1ODAyMTAyN15BMl5BanBnXkFtZTcwMTQ0NzY4OA@@._V1_SY317_CR51,0,214,317_.jpg"
                 ] forKey:@"Andrew McHale"];
         
-        // TODO
+        // TODO all
     }
     
     return actors;
+}
+
++ (ActorInfo *) actorByName:(NSString *)name {
+    return [[Actors all] objectForKey:name];
+}
+
++ (ActorInfo *) randomActorContainingQuotes: (BOOL)withQuotes {
+    return [[Actors all] objectForKey:[Actors randomActorNameContainingQuotes:withQuotes]];
+}
+
++ (Quote *) randomQuote {
+    ActorInfo *randomActor = [Actors actorByName: [Actors randomActorNameContainingQuotes:YES]];
+    int randomIndex = rand() % randomActor.quotes.count;
+    return [randomActor.quotes objectAtIndex: randomIndex];
+}
+
++ (NSString *) randomActorNameContainingQuotes:(BOOL)withQuotes {
+    if (withQuotes) {
+        NSArray *filteredActors = [[[Actors all] keysOfEntriesPassingTest:^BOOL(id key, id obj, BOOL *stop) {
+            if ([obj quotes]) {
+                return YES;
+            };
+            
+            return NO;
+        }] allObjects];
+        int randomIndex = rand() % filteredActors.count;
+        return [filteredActors objectAtIndex:randomIndex];
+    } else {
+        int randomIndex = rand() % [[[Actors all] allKeys] count];
+        return [[[Actors all] allKeys] objectAtIndex:rand() % randomIndex];
+    }
 }
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ActorInfo.h"
+#import "Quote.h"
 
 @interface Actors : NSObject
+
 + (NSDictionary *) all;
++ (ActorInfo *) actorByName:(NSString *)name;
+
++ (ActorInfo *) randomActorContainingQuotes: (BOOL)withQuotes;
++ (Quote *) randomQuote;
+
 @end

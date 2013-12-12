@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Quote.h"
+#import "SocialIntegration.h"
+#import <Social/Social.h>
 
 @interface QuoteController : UIViewController
+
+@property(strong, nonatomic) Quote *quote;
 
 @end
