@@ -377,7 +377,7 @@ That’s where all the fun starts.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
-                                <state key="normal" title="About"/>
+                                <state key="normal" backgroundImage="1About"/>
                                 <connections>
                                     <segue destination="QUy-BD-bpt" kind="push" id="UFB-Ka-Qk9"/>
                                 </connections>
@@ -385,7 +385,7 @@ That’s where all the fun starts.</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-ib-iXy">
                                 <rect key="frame" x="164" y="12" width="121" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Team">
+                                <state key="normal" title="Team" backgroundImage="2Team">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -395,7 +395,7 @@ That’s where all the fun starts.</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVM-08-T0z">
                                 <rect key="frame" x="35" y="269" width="250" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gallery">
+                                <state key="normal" backgroundImage="5Gallery">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -403,9 +403,9 @@ That’s where all the fun starts.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSF-VW-Xzb">
-                                <rect key="frame" x="164" y="141" width="121" height="121"/>
+                                <rect key="frame" x="164" y="140" width="121" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Video">
+                                <state key="normal" backgroundImage="4Video">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -413,9 +413,9 @@ That’s where all the fun starts.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3B-FE-F8M">
-                                <rect key="frame" x="35" y="141" width="121" height="121"/>
+                                <rect key="frame" x="35" y="140" width="121" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facts">
+                                <state key="normal" backgroundImage="3Facts">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -522,6 +522,11 @@ That’s where all the fun starts.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="1About" width="360" height="360"/>
+        <image name="2Team" width="360" height="360"/>
+        <image name="3Facts" width="360" height="360"/>
+        <image name="4Video" width="360" height="360"/>
+        <image name="5Gallery" width="500" height="240"/>
         <image name="first" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
