@@ -29,6 +29,7 @@
 		60D127FC18521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
 		60D1280418521B7A0086A8D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D1280218521B7A0086A8D4 /* InfoPlist.strings */; };
 		60D1280618521B7A0086A8D4 /* RedirectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D1280518521B7A0086A8D4 /* RedirectedTests.m */; };
+		F127CEF8185E065A00B66CB0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F127CEF7185E065A00B66CB0 /* ImageViewController.m */; };
 		F19C16411854DCC100740B2C /* ActorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16401854DCC100740B2C /* ActorInfo.m */; };
 		F19C16441854DFAB00740B2C /* Actors.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16431854DFAB00740B2C /* Actors.m */; };
 		F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16461855002F00740B2C /* ActorDetailViewController.m */; };
@@ -122,6 +123,8 @@
 		60D1280118521B7A0086A8D4 /* RedirectedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedirectedTests-Info.plist"; sourceTree = "<group>"; };
 		60D1280318521B7A0086A8D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60D1280518521B7A0086A8D4 /* RedirectedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedirectedTests.m; sourceTree = "<group>"; };
+		F127CEF6185E065A00B66CB0 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		F127CEF7185E065A00B66CB0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		F19C163F1854DCC100740B2C /* ActorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorInfo.h; sourceTree = "<group>"; };
 		F19C16401854DCC100740B2C /* ActorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorInfo.m; sourceTree = "<group>"; };
 		F19C16421854DFAB00740B2C /* Actors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actors.h; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 			children = (
 				F19EF314185DB6EC00F6B21F /* GalleryViewController.h */,
 				F19EF315185DB6EC00F6B21F /* GalleryViewController.m */,
+				F127CEF6185E065A00B66CB0 /* ImageViewController.h */,
+				F127CEF7185E065A00B66CB0 /* ImageViewController.m */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 			files = (
 				F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */,
 				60D127F118521B7A0086A8D4 /* AboutViewController.m in Sources */,
+				F127CEF8185E065A00B66CB0 /* ImageViewController.m in Sources */,
 				F19E69A6185A30AC00B2CAB3 /* Quote.m in Sources */,
 				F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,

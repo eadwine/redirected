@@ -7,19 +7,48 @@
 //
 
 #import "GalleryViewController.h"
+#import "ImageViewController.h"
 
 @interface GalleryViewController ()
+
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic) NSInteger selectedImageIndex;
+
+- (NSString *) fromattedImageNameForIndex:(NSInteger)index forFullImage:(BOOL)full;
+
 @end
 
 @implementation GalleryViewController
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (NSString *) fromattedImageNameForIndex:(NSInteger)index forFullImage:(BOOL)full
+{
+    if (full) {
+        return [NSString stringWithFormat:@"Image%u_full.png", index];
+    }
+    
+    return [NSString stringWithFormat:@"Image%u_thumb.png", index];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
     return 12;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *currentImageName = [NSString stringWithFormat:@"Image%u_thumb.png", indexPath.item+1];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *currentImageName = [self fromattedImageNameForIndex: indexPath.item+1 forFullImage: NO];
     UIImage *imageToDisplay = [UIImage imageNamed:currentImageName];
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageTemplate" forIndexPath:indexPath];
@@ -61,16 +90,15 @@
     return UIEdgeInsetsMake(5, 5, 5, 5);
 }
 
-- (void)viewDidLoad
+- (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.selectedImageIndex = indexPath.item;
+    [self performSegueWithIdentifier:@"ShowFullImage" sender:self];
 }
 
-- (void)didReceiveMemoryWarning
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [segue.destinationViewController setImageName:[self fromattedImageNameForIndex: self.selectedImageIndex+1 forFullImage: YES]];
 }
 
 @end
