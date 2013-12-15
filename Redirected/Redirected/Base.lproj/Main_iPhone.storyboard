@@ -32,7 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Countdown" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Countdown" image="toolbar1_countdown" id="u1e-5L-l1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +70,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                         </timeZone>
                     </datePicker>
-                    <tabBarItem key="tabBarItem" title="Repertoire" image="first" id="N4u-2K-ogi"/>
+                    <tabBarItem key="tabBarItem" title="Repertoire" image="toolbar2_repertoire" id="N4u-2K-ogi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4o-bT-yOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +80,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="WGL-3h-XNg">
             <objects>
                 <navigationController definesPresentationContext="YES" id="6As-1h-dGW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Images" image="first" id="AoB-Kk-1Hm"/>
+                    <tabBarItem key="tabBarItem" title="Images" image="toolbar5_images" id="AoB-Kk-1Hm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sS3-El-d51">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -355,8 +355,8 @@ That’s where all the fun starts.</string>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="VeM-mD-aeM" kind="relationship" relationship="viewControllers" id="yTu-WQ-FOl"/>
                         <segue destination="8I2-ox-CtX" kind="relationship" relationship="viewControllers" id="LmU-P0-Tt5"/>
-                        <segue destination="6As-1h-dGW" kind="relationship" relationship="viewControllers" id="80b-Ue-EtL"/>
                         <segue destination="JO2-uR-3PX" kind="relationship" relationship="viewControllers" id="DlU-nH-8G3"/>
+                        <segue destination="6As-1h-dGW" kind="relationship" relationship="viewControllers" id="80b-Ue-EtL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -437,7 +437,7 @@ That’s where all the fun starts.</string>
         <scene sceneID="2Uq-nb-VuX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JO2-uR-3PX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quotes" image="first" id="Puw-kY-wYj"/>
+                    <tabBarItem key="tabBarItem" title="Quotes" image="toolbar4_quotes" id="Puw-kY-wYj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Wi-mG-7qD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -508,7 +508,7 @@ That’s where all the fun starts.</string>
         <scene sceneID="xzb-LC-7Mt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8I2-ox-CtX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Info" image="first" id="BpG-td-sGC"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="toolbar3_info" id="BpG-td-sGC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xiH-Q2-eg4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -530,7 +530,11 @@ That’s where all the fun starts.</string>
         <image name="3Facts" width="360" height="360"/>
         <image name="4Video" width="360" height="360"/>
         <image name="5Gallery" width="500" height="240"/>
-        <image name="first" width="30" height="30"/>
+        <image name="toolbar1_countdown" width="22" height="22"/>
+        <image name="toolbar2_repertoire" width="22" height="22"/>
+        <image name="toolbar3_info" width="22" height="22"/>
+        <image name="toolbar4_quotes" width="22" height="22"/>
+        <image name="toolbar5_images" width="22" height="22"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -538,6 +542,6 @@ That’s where all the fun starts.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4Js-N1-6Qb"/>
+        <segue reference="Tf0-lc-yA8"/>
     </inferredMetricsTieBreakers>
 </document>
