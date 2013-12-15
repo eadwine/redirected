@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6084C835185A71D000A1255D /* RepertoireController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6084C834185A71D000A1255D /* RepertoireController.m */; };
 		60B02B4D1857CE0100EAB31C /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B441857CA6600EAB31C /* libRestKit.a */; };
 		60B02B531857CE0100EAB31C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B4E1857CE0100EAB31C /* CFNetwork.framework */; };
 		60B02B541857CE0100EAB31C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B4F1857CE0100EAB31C /* CoreData.framework */; };
@@ -14,6 +15,11 @@
 		60B02B561857CE0100EAB31C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B511857CE0100EAB31C /* Security.framework */; };
 		60B02B571857CE0100EAB31C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B521857CE0100EAB31C /* SystemConfiguration.framework */; };
 		60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
+		60B4B32C185DE2680049551A /* Press Serif Cool.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */; };
+		60B4B331185E46470049551A /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B32E185E46470049551A /* BebasNeue.otf */; };
+		60B4B332185E46470049551A /* Uni_acc_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */; };
+		60B4B333185E46470049551A /* Uni_acc.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B330185E46470049551A /* Uni_acc.ttf */; };
+		60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
 		60D127D918521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
@@ -39,7 +45,6 @@
 		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
 		F19EF312185DB22B00F6B21F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF311185DB22B00F6B21F /* InfoViewController.m */; };
 		F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF315185DB6EC00F6B21F /* GalleryViewController.m */; };
-		F1AC4E8E1858DA6A00E90EBD /* Press Serif Cool.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */; };
 		F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC4E941858F55B00E90EBD /* VideoViewController.m */; };
 		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
 		F1DFBFF818537EE40005304B /* SocialIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* SocialIntegration.m */; };
@@ -91,13 +96,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6084C833185A71D000A1255D /* RepertoireController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepertoireController.h; sourceTree = "<group>"; };
+		6084C834185A71D000A1255D /* RepertoireController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepertoireController.m; sourceTree = "<group>"; };
 		60B02B3C1857CA6500EAB31C /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ../RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		60B02B4E1857CE0100EAB31C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		60B02B4F1857CE0100EAB31C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		60B02B501857CE0100EAB31C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		60B02B511857CE0100EAB31C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		60B02B521857CE0100EAB31C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		60B4B32E185E46470049551A /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uni_acc_Italic.ttf; sourceTree = "<group>"; };
+		60B4B330185E46470049551A /* Uni_acc.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uni_acc.ttf; sourceTree = "<group>"; };
 		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Redirected.xcdatamodel; sourceTree = "<group>"; };
 		60BAA1961856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60BAA1971856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
 		60BAA1981856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Main_iPad.strings; sourceTree = "<group>"; };
@@ -235,12 +246,15 @@
 			children = (
 				60D127E318521B7A0086A8D4 /* AppDelegate.h */,
 				60D127E418521B7A0086A8D4 /* AppDelegate.m */,
+				6084C833185A71D000A1255D /* RepertoireController.h */,
+				6084C834185A71D000A1255D /* RepertoireController.m */,
 				60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */,
 				60D127E918521B7A0086A8D4 /* Main_iPad.storyboard */,
 				60D127F218521B7A0086A8D4 /* Images.xcassets */,
 				60D127EC18521B7A0086A8D4 /* CountdownViewController.h */,
 				60D127ED18521B7A0086A8D4 /* CountdownViewController.m */,
 				F1DFBE0B185370950005304B /* ActorListController.h */,
+				60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */,
 				F1DFBE0C185370950005304B /* ActorListController.m */,
 				F19C16451855002F00740B2C /* ActorDetailViewController.h */,
 				F19C16461855002F00740B2C /* ActorDetailViewController.m */,
@@ -336,6 +350,9 @@
 		F1AC4E921858DA8F00E90EBD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				60B4B32E185E46470049551A /* BebasNeue.otf */,
+				60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */,
+				60B4B330185E46470049551A /* Uni_acc.ttf */,
 				F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */,
 			);
 			name = Fonts;
@@ -457,9 +474,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B4B332185E46470049551A /* Uni_acc_Italic.ttf in Resources */,
+				60B4B333185E46470049551A /* Uni_acc.ttf in Resources */,
 				60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */,
-				F1AC4E8E1858DA6A00E90EBD /* Press Serif Cool.ttf in Resources */,
 				60D127EB18521B7A0086A8D4 /* Main_iPad.storyboard in Resources */,
+				60B4B331185E46470049551A /* BebasNeue.otf in Resources */,
+				60B4B32C185DE2680049551A /* Press Serif Cool.ttf in Resources */,
 				60D127F318521B7A0086A8D4 /* Images.xcassets in Resources */,
 				60D127DF18521B7A0086A8D4 /* InfoPlist.strings in Resources */,
 			);
@@ -494,6 +514,8 @@
 				F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
 				F19EF312185DB22B00F6B21F /* InfoViewController.m in Sources */,
+				60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */,
+				6084C835185A71D000A1255D /* RepertoireController.m in Sources */,
 				F19C16441854DFAB00740B2C /* Actors.m in Sources */,
 				F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */,
 			);
@@ -755,6 +777,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */,
+			);
+			currentVersion = 60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */;
+			path = Redirected.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60D127C918521B7A0086A8D4 /* Project object */;
 }

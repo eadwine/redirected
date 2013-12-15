@@ -1,11 +1,79 @@
 #import "AppDelegate.h"
+#import "RepertoireController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSError *error = nil;
+    NSURL *modelURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Redirected" ofType:@"momd"]];
+    // NOTE: Due to an iOS 5 bug, the managed object model returned is immutable.
+    NSManagedObjectModel *managedObjectModel = [[[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL] mutableCopy];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+    
+    // Initialize the Core Data stack
+    [managedObjectStore createPersistentStoreCoordinator];
+    
+    NSPersistentStore __unused *persistentStore = [managedObjectStore addInMemoryPersistentStore:&error];
+    NSAssert(persistentStore, @"Failed to add persistent store: %@", error);
+    
+    [managedObjectStore createManagedObjectContexts];
+    
+    // Set the default store shared instance
+    [RKManagedObjectStore setDefaultStore:managedObjectStore];
+    
+    // Override point for customization after application launch. ========================================================
+    
+    // Configure the object manager
+    [self configureObjectManagerWithManagedObjectStore:managedObjectStore];
+    
+    // Remove first tab after the premiere
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComps = [NSDateComponents new];
+    [dateComps setYear:2014];
+    [dateComps setMonth:1];
+    [dateComps setDay:10];
+    NSDate *launchDate = [calendar dateFromComponents:dateComps];
+    if ([launchDate timeIntervalSinceNow] <= 0) {
+        UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+        NSMutableArray *arrayOfControllers = [[NSMutableArray alloc] initWithArray:tabBarController.viewControllers];
+        [arrayOfControllers removeObjectAtIndex:0];
+        [tabBarController setViewControllers:arrayOfControllers];
+    }
+    
     return YES;
+}
+
+- (void)configureObjectManagerWithManagedObjectStore:(RKManagedObjectStore *)managedObjectStore
+{
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://redirectedmovie.azurewebsites.net"]];
+    objectManager.managedObjectStore = managedObjectStore;
+    
+    [RKObjectManager setSharedManager:objectManager];
+    
+    //Showtime mapping
+    RKEntityMapping *showtimeMapping = [RKEntityMapping mappingForEntityForName:@"Showtime" inManagedObjectStore:managedObjectStore];
+    [showtimeMapping addAttributeMappingsFromDictionary:@{@"StartDate":@"startDate",
+                                                          @"EndDate":@"endDate",
+                                                          @"TimeString":@"timeString"}];
+    showtimeMapping.identificationAttributes = @[@"startDate", @"endDate", @"timeString"];
+    //Thearte mapping
+    RKEntityMapping *theatreMapping = [RKEntityMapping mappingForEntityForName:@"Theatre" inManagedObjectStore:managedObjectStore];
+    [theatreMapping addAttributeMappingsFromDictionary:@{@"Branch":@"branch",
+                                                         @"Theatre":@"theatre"}];
+    [theatreMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Showtimes" toKeyPath:@"showtimes" withMapping:showtimeMapping]];
+    theatreMapping.identificationAttributes = @[@"theatre"];
+    //Repertoire mapping
+    RKEntityMapping *repertoireMapping = [RKEntityMapping mappingForEntityForName:@"Repertoire" inManagedObjectStore:managedObjectStore];
+    [repertoireMapping addAttributeMappingsFromDictionary:@{@"City":@"city"}];
+    [repertoireMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Theatres" toKeyPath:@"theatres" withMapping:theatreMapping]];
+    repertoireMapping.identificationAttributes = @[@"city"];
+    
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:repertoireMapping
+                                                                                            method:RKRequestMethodAny pathPattern:@"/api/showtimes" keyPath:nil
+                                                                                       statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    [objectManager addResponseDescriptor:responseDescriptor];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
