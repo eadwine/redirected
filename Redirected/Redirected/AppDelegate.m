@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "RepertoireController.h"
 
 @implementation AppDelegate
 
@@ -24,28 +25,55 @@
     // Override point for customization after application launch. ========================================================
     
     // Configure the object manager
-    /*RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://api.github.com"]];
+    [self configureObjectManagerWithManagedObjectStore:managedObjectStore];
+    
+    // Remove first tab after the premiere
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComps = [NSDateComponents new];
+    [dateComps setYear:2014];
+    [dateComps setMonth:1];
+    [dateComps setDay:10];
+    NSDate *launchDate = [calendar dateFromComponents:dateComps];
+    if ([launchDate timeIntervalSinceNow] <= 0) {
+        UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+        NSMutableArray *arrayOfControllers = [[NSMutableArray alloc] initWithArray:tabBarController.viewControllers];
+        [arrayOfControllers removeObjectAtIndex:0];
+        [tabBarController setViewControllers:arrayOfControllers];
+    }
+    
+    return YES;
+}
+
+- (void)configureObjectManagerWithManagedObjectStore:(RKManagedObjectStore *)managedObjectStore
+{
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://redirectedmovie.azurewebsites.net"]];
     objectManager.managedObjectStore = managedObjectStore;
     
     [RKObjectManager setSharedManager:objectManager];
     
-    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Gist" inManagedObjectStore:managedObjectStore];
-    [entityMapping addAttributeMappingsFromDictionary:@{@"id":          @"gistID",
-                                                        @"url":         @"jsonURL",
-                                                        @"description": @"descriptionText",
-                                                        @"public":      @"public",
-                                                        @"created_at":  @"createdAt"}];
+    //Showtime mapping
+    RKEntityMapping *showtimeMapping = [RKEntityMapping mappingForEntityForName:@"Showtime" inManagedObjectStore:managedObjectStore];
+    [showtimeMapping addAttributeMappingsFromDictionary:@{@"StartDate":@"startDate",
+                                                          @"EndDate":@"endDate",
+                                                          @"TimeString":@"timeString"}];
+    showtimeMapping.identificationAttributes = @[@"startDate", @"endDate", @"timeString"];
+    //Thearte mapping
+    RKEntityMapping *theatreMapping = [RKEntityMapping mappingForEntityForName:@"Theatre" inManagedObjectStore:managedObjectStore];
+    [theatreMapping addAttributeMappingsFromDictionary:@{@"Branch":@"branch",
+                                                         @"Theatre":@"theatre"}];
+    [theatreMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Showtimes" toKeyPath:@"showtimes" withMapping:showtimeMapping]];
+    theatreMapping.identificationAttributes = @[@"theatre"];
+    //Repertoire mapping
+    RKEntityMapping *repertoireMapping = [RKEntityMapping mappingForEntityForName:@"Repertoire" inManagedObjectStore:managedObjectStore];
+    [repertoireMapping addAttributeMappingsFromDictionary:@{@"City":@"city"}];
+    [repertoireMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Theatres" toKeyPath:@"theatres" withMapping:theatreMapping]];
+    repertoireMapping.identificationAttributes = @[@"city"];
     
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping
-                                                                                            method:RKRequestMethodAny pathPattern:@"/gists/public" keyPath:nil
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:repertoireMapping
+                                                                                            method:RKRequestMethodAny pathPattern:@"/api/showtimes" keyPath:nil
                                                                                        statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    [objectManager addResponseDescriptor:responseDescriptor];*/
-    
-    //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    //RKMasterViewController *controller = (RKGMasterViewController *)navigationController.topViewController;
-    //controller.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
-    
-    return YES;
+    [objectManager addResponseDescriptor:responseDescriptor];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

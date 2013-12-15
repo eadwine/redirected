@@ -15,6 +15,10 @@
 		60B02B561857CE0100EAB31C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B511857CE0100EAB31C /* Security.framework */; };
 		60B02B571857CE0100EAB31C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B02B521857CE0100EAB31C /* SystemConfiguration.framework */; };
 		60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D127E618521B7A0086A8D4 /* Main_iPhone.storyboard */; };
+		60B4B32C185DE2680049551A /* Press Serif Cool.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */; };
+		60B4B331185E46470049551A /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B32E185E46470049551A /* BebasNeue.otf */; };
+		60B4B332185E46470049551A /* Uni_acc_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */; };
+		60B4B333185E46470049551A /* Uni_acc.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60B4B330185E46470049551A /* Uni_acc.ttf */; };
 		60B54A1D1858F16100A54329 /* Redirected.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60B54A1B1858F16100A54329 /* Redirected.xcdatamodeld */; };
 		60D127D518521B7A0086A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D418521B7A0086A8D4 /* Foundation.framework */; };
 		60D127D718521B7A0086A8D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D618521B7A0086A8D4 /* CoreGraphics.framework */; };
@@ -37,7 +41,6 @@
 		F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86C1857864B000DCBE4 /* QuoteController.m */; };
 		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
 		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
-		F1AC4E8E1858DA6A00E90EBD /* Press Serif Cool.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */; };
 		F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC4E941858F55B00E90EBD /* VideoViewController.m */; };
 		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
 		F1DFBFF818537EE40005304B /* SocialIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* SocialIntegration.m */; };
@@ -97,6 +100,9 @@
 		60B02B501857CE0100EAB31C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		60B02B511857CE0100EAB31C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		60B02B521857CE0100EAB31C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		60B4B32E185E46470049551A /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uni_acc_Italic.ttf; sourceTree = "<group>"; };
+		60B4B330185E46470049551A /* Uni_acc.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uni_acc.ttf; sourceTree = "<group>"; };
 		60B4E311185358B600401958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		60B54A1C1858F16100A54329 /* Redirected.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Redirected.xcdatamodel; sourceTree = "<group>"; };
 		60BAA1961856766D00CB3CE7 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -292,6 +298,9 @@
 		F1AC4E921858DA8F00E90EBD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				60B4B32E185E46470049551A /* BebasNeue.otf */,
+				60B4B32F185E46470049551A /* Uni_acc_Italic.ttf */,
+				60B4B330185E46470049551A /* Uni_acc.ttf */,
 				F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */,
 			);
 			name = Fonts;
@@ -413,9 +422,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B4B332185E46470049551A /* Uni_acc_Italic.ttf in Resources */,
+				60B4B333185E46470049551A /* Uni_acc.ttf in Resources */,
 				60B2CB641853542F0061C050 /* Main_iPhone.storyboard in Resources */,
-				F1AC4E8E1858DA6A00E90EBD /* Press Serif Cool.ttf in Resources */,
 				60D127EB18521B7A0086A8D4 /* Main_iPad.storyboard in Resources */,
+				60B4B331185E46470049551A /* BebasNeue.otf in Resources */,
+				60B4B32C185DE2680049551A /* Press Serif Cool.ttf in Resources */,
 				60D127F318521B7A0086A8D4 /* Images.xcassets in Resources */,
 				60D127DF18521B7A0086A8D4 /* InfoPlist.strings in Resources */,
 			);
