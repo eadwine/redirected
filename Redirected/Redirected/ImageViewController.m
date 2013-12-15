@@ -7,13 +7,21 @@
 //
 
 #import "ImageViewController.h"
+#import "SocialIntegration.h"
 
 @interface ImageViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) SocialIntegration *socialIntegration;
 @end
 
 @implementation ImageViewController
+
+@synthesize socialIntegration = _socialIntegration;
+
+- (IBAction)share {
+    [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:@"Photo from movie Redirected" image:self.imageView.image link:[NSURL URLWithString:@"http://redirectedmovie.com"]] animated:YES completion:nil];
+}
 
 - (void)viewDidLoad
 {
@@ -35,6 +43,14 @@
 
 -(UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.imageView;
+}
+
+- (SocialIntegration *) socialIntegration {
+    if (!_socialIntegration) {
+        _socialIntegration = [[SocialIntegration alloc] init];
+    }
+    
+    return _socialIntegration;
 }
 
 - (void)didReceiveMemoryWarning

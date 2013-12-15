@@ -22,7 +22,7 @@ static NSDictionary *actors;
         [actors setValue: [[ActorInfo alloc] initWithName:@"Vinnie Jones"
                                                  roleName:@"Golden Pole"
                                                    quotes:[NSArray arrayWithObjects:
-                                                           [[Quote alloc] initWithText:@"grugh" fromAuthor:@"Vinnie Jones"], nil]
+                                                           [[Quote alloc] initWithText:@"grumsghms" fromAuthor:@"Vinnie Jones"], nil]
                                             remotePicture:@"http://ia.media-imdb.com/images/M/MV5BMTczNTg2NDk0NV5BMl5BanBnXkFtZTcwMTA0MzA5OQ@@._V1_SY317_CR14,0,214,317_.jpg"
                 ] forKey:@"Vinnie Jones"];
 

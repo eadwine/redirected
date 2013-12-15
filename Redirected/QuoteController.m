@@ -32,9 +32,7 @@
     self.authorLabel.text = self.quote.author;
     self.authorLabel.font = [UIFont fontWithName:@"Press Serif Cool" size:self.authorLabel.font.pointSize];
 }
-
-- (IBAction)shareOnFacebook
-{
+- (IBAction)share {
     [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:[self formattedQuote]
                                                                               image:nil
                                                                                link:[NSURL URLWithString:@"http://redirectedmovie.com"]] animated:YES completion:nil];
