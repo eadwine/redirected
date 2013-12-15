@@ -22,34 +22,4 @@
     return self;
 }
 
-- (id) initWithName:(NSString *) name
-           roleName:(NSString *) roleName
-             quotes:(NSArray *) quotes {
-    
-    self = [super init];
-    if (self) {
-        self.actorName = name;
-        self.roleName = roleName;
-        self.quotes = quotes;
-    }
-    
-    return self;
-}
-
-- (id) initWithName:(NSString *) name
-           roleName:(NSString *) roleName
-             quotes:(NSArray *) quotes
-      remotePicture:(NSString *) remotePictureUrl {
-    
-    self = [super init];
-    if (self) {
-        self.actorName = name;
-        self.roleName = roleName;
-        self.remotePictureUrl = remotePictureUrl;
-        self.quotes = quotes;
-    }
-    
-    return self;
-}
-
 @end

@@ -13,18 +13,13 @@
 @property NSString *actorName;
 @property NSString *roleName;
 @property NSArray *quotes;
+@property NSInteger movieCount;
+@property NSString *bestRoles;
+@property NSString *shortDescription;
 @property NSString *remotePictureUrl;
+@property NSString *localPicture;
 
 - (id) initWithName: (NSString *) name
            roleName: (NSString *) roleName;
-
-- (id) initWithName: (NSString *) name
-           roleName: (NSString *) roleName
-             quotes: (NSArray *) quotes;
-
-- (id) initWithName: (NSString *) name
-           roleName: (NSString *) roleName
-             quotes: (NSArray *) quotes
-      remotePicture: (NSString *) remotePictureUrl;
 
 @end
