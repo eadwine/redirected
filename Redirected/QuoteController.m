@@ -26,9 +26,11 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+
     self.quoteLabel.text = [NSString stringWithFormat:@"\"%@\"", self.quote.text];
+    self.quoteLabel.font = [UIFont fontWithName:@"Press Serif Cool" size:self.quoteLabel.font.pointSize];
     self.authorLabel.text = self.quote.author;
+    self.authorLabel.font = [UIFont fontWithName:@"Press Serif Cool" size:self.authorLabel.font.pointSize];
 }
 
 - (IBAction)shareOnFacebook
