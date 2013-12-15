@@ -36,6 +36,8 @@
 		F19EE86D1857864B000DCBE4 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86C1857864B000DCBE4 /* QuoteController.m */; };
 		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
 		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
+		F19EF312185DB22B00F6B21F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF311185DB22B00F6B21F /* InfoViewController.m */; };
+		F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF315185DB6EC00F6B21F /* GalleryViewController.m */; };
 		F1AC4E8E1858DA6A00E90EBD /* Press Serif Cool.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */; };
 		F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC4E941858F55B00E90EBD /* VideoViewController.m */; };
 		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
@@ -133,6 +135,10 @@
 		F19EE86E18578804000DCBE4 /* QuoteGeneratorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGeneratorController.h; path = ../QuoteGeneratorController.h; sourceTree = "<group>"; };
 		F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteGeneratorController.m; path = ../QuoteGeneratorController.m; sourceTree = "<group>"; };
 		F19EE871185798A5000DCBE4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F19EF310185DB22B00F6B21F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F19EF311185DB22B00F6B21F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F19EF314185DB6EC00F6B21F /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		F19EF315185DB6EC00F6B21F /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Press Serif Cool.ttf"; sourceTree = "<group>"; };
 		F1AC4E931858F55B00E90EBD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = ../VideoViewController.h; sourceTree = "<group>"; };
 		F1AC4E941858F55B00E90EBD /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = ../VideoViewController.m; sourceTree = "<group>"; };
@@ -237,8 +243,11 @@
 				F19C16461855002F00740B2C /* ActorDetailViewController.m */,
 				60D127EF18521B7A0086A8D4 /* AboutViewController.h */,
 				60D127F018521B7A0086A8D4 /* AboutViewController.m */,
+				F19EF310185DB22B00F6B21F /* InfoViewController.h */,
+				F19EF311185DB22B00F6B21F /* InfoViewController.m */,
 				F1AC4E931858F55B00E90EBD /* VideoViewController.h */,
 				F1AC4E941858F55B00E90EBD /* VideoViewController.m */,
+				F19EF313185DB6BE00F6B21F /* images */,
 				F19E69A2185A2ACE00B2CAB3 /* quotes */,
 				F19E69A7185A30B900B2CAB3 /* util */,
 				F19E69A3185A306500B2CAB3 /* model */,
@@ -308,6 +317,15 @@
 				F1DFBFF718537EE40005304B /* SocialIntegration.m */,
 			);
 			name = util;
+			sourceTree = "<group>";
+		};
+		F19EF313185DB6BE00F6B21F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F19EF314185DB6EC00F6B21F /* GalleryViewController.h */,
+				F19EF315185DB6EC00F6B21F /* GalleryViewController.m */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		F1AC4E921858DA8F00E90EBD /* Fonts */ = {
@@ -469,7 +487,9 @@
 				60D127EE18521B7A0086A8D4 /* CountdownViewController.m in Sources */,
 				F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */,
 				60D127E118521B7A0086A8D4 /* main.m in Sources */,
+				F19EF312185DB22B00F6B21F /* InfoViewController.m in Sources */,
 				F19C16441854DFAB00740B2C /* Actors.m in Sources */,
+				F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
