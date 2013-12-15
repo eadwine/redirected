@@ -96,7 +96,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="195" y="786"/>
         </scene>
-        <!--Gallery View Controller - Galerija-->
+        <!--Gallery View Controller - Gallery-->
         <scene sceneID="Psv-RJ-fHm">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="1Kb-Mm-Qyf" customClass="GalleryViewController" sceneMemberID="viewController">
@@ -128,7 +128,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <outlet property="delegate" destination="1Kb-Mm-Qyf" id="xH4-Qg-qrO"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Galerija" id="6vE-95-EWp"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="6vE-95-EWp"/>
                     <connections>
                         <outlet property="collectionView" destination="aPn-0P-YAY" id="CGh-fJ-5OU"/>
                     </connections>
