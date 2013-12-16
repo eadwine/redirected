@@ -519,7 +519,7 @@
 				F1EA64C2185F6E5000EBF4F5 /* MWZoomingScrollView.h */,
 				F1EA64C3185F6E5000EBF4F5 /* MWZoomingScrollView.m */,
 			);
-			name = mwphotobrowser;
+			path = mwphotobrowser;
 			sourceTree = "<group>";
 		};
 		F1EA64CE185F6E7800EBF4F5 /* DACircularProgress */ = {
