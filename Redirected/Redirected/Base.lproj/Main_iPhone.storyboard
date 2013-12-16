@@ -594,7 +594,4 @@ That’s where all the fun starts.</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="4Js-N1-6Qb"/>
-    </inferredMetricsTieBreakers>
 </document>
