@@ -10,8 +10,6 @@
 
 @interface InfoViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
 @end
 
 @implementation InfoViewController
