@@ -1,6 +1,9 @@
 #import "RepertoireController.h"
 
-@interface RepertoireController ()
+@interface RepertoireController () <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
 
@@ -38,7 +41,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[self.fetchedResultsController sections] count];
+    return 1;//[[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -59,7 +62,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    return [[[sectionInfo objects] objectAtIndex:0] valueForKeyPath:@"theatre.repertoire.city"];
+    return [[[sectionInfo objects] objectAtIndex:0] valueForKeyPath:@"theatre.city.city"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,12 +92,12 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Showtime"];
     
-    NSSortDescriptor *citySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"theatre.repertoire.city" ascending:YES];
+    NSSortDescriptor *citySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"theatre.city.city" ascending:YES];
     NSSortDescriptor *theatreSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeString" ascending:YES];
     
     [fetchRequest setSortDescriptors:@[citySortDescriptor, theatreSortDescriptor]];
     
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"theatre.repertoire.city" cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"theatre.city.city" cacheName:@"Master"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     

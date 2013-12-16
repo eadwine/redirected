@@ -64,7 +64,7 @@
     [theatreMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Showtimes" toKeyPath:@"showtimes" withMapping:showtimeMapping]];
     theatreMapping.identificationAttributes = @[@"theatre"];
     //Repertoire mapping
-    RKEntityMapping *repertoireMapping = [RKEntityMapping mappingForEntityForName:@"Repertoire" inManagedObjectStore:managedObjectStore];
+    RKEntityMapping *repertoireMapping = [RKEntityMapping mappingForEntityForName:@"City" inManagedObjectStore:managedObjectStore];
     [repertoireMapping addAttributeMappingsFromDictionary:@{@"City":@"city"}];
     [repertoireMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"Theatres" toKeyPath:@"theatres" withMapping:theatreMapping]];
     repertoireMapping.identificationAttributes = @[@"city"];
