@@ -1,9 +1,5 @@
 //
-//  GalleryViewController.m
-//  Redirected
-//
-//  Created by Nerijus on 12/15/13.
-//  Copyright (c) 2013 redirectedmovie.com. All rights reserved.
+//  TODO: remove
 //
 
 #import "GalleryViewController.h"

@@ -17,8 +17,8 @@
         <relationship name="showtimes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Showtime" inverseName="theatre" inverseEntity="Showtime" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Repertoire" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Showtime" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Theatre" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Repertoire" positionX="0" positionY="-9" width="128" height="75"/>
+        <element name="Showtime" positionX="0" positionY="-9" width="128" height="105"/>
+        <element name="Theatre" positionX="0" positionY="-9" width="128" height="105"/>
     </elements>
 </model>
