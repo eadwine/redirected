@@ -968,6 +968,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -993,6 +994,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
