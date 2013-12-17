@@ -14,19 +14,13 @@
 {
     [super viewDidLoad];
     
-    NSDateComponents *dateComps = [NSDateComponents new];
-    [dateComps setYear:2013];
-    [dateComps setMonth:12];
-    [dateComps setDay:14];
-    
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
-    
-    
-    //NSDate *today = [[NSCalendar currentCalendar] dateFromComponents:dateComps];
     NSDate *today = [dateFormatter dateFromString:@"2013-12-14T00:00:00"];
     
     self.showDate = today;
+    self.showDate = [NSDate date];
     
     self.managedObjectContext = [RKObjectManager sharedManager].managedObjectStore.mainQueueManagedObjectContext;
     
@@ -107,12 +101,12 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Showtime"];
     
-    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(startDate <= %@) AND (endDate >= %@)", self.showDate, self.showDate];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(startDate <= %@) AND (endDate >= %@)", self.showDate, self.showDate];
     
     NSSortDescriptor *citySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"theatre.city.city" ascending:YES];
     NSSortDescriptor *theatreSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"theatre.theatre" ascending:YES];
     
-    //[fetchRequest setPredicate:predicate];
+    [fetchRequest setPredicate:predicate];
     [fetchRequest setSortDescriptors:@[citySortDescriptor, theatreSortDescriptor]];
     
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"theatre.city.city" cacheName:@"Master"];
