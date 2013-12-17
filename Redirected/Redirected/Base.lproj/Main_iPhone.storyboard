@@ -285,7 +285,7 @@ That’s where all the fun starts.</string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ygw-AR-m2n">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="YAC-6P-B8n">
+                        <barButtonItem key="rightBarButtonItem" id="YAC-6P-B8n">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TS6-zF-pyc">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
