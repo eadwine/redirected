@@ -9,12 +9,16 @@
 #import "ImagesViewController.h"
 #import "MWPhotoBrowser.h"
 #import "GalleryDelegate.h"
+#import "SocialIntegration.h"
 
 @interface ImagesViewController () <MWPhotoBrowserDelegate>
 // TODO property of wallpaper or gallery mode enum?
+@property (strong, nonatomic) SocialIntegration *socialIntegration;
 @end
 
 @implementation ImagesViewController
+
+@synthesize socialIntegration = _socialIntegration;
 
 - (IBAction)showGallery {
     MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
@@ -70,16 +74,22 @@
 //- (MWCaptionView *)photoBrowser:(MWPhotoBrowser *)photoBrowser captionViewForPhotoAtIndex:(NSUInteger)index;
 
 - (void)photoBrowser:(MWPhotoBrowser *)photoBrowser actionButtonPressedForPhotoAtIndex:(NSUInteger)index {
-    // TODO
+    NSString *currentImageName = [self fromattedImageNameForIndex: index+1 forFullImage: YES];
+    UIImage *image = [UIImage imageNamed:currentImageName];
+    
+    [self presentViewController:[self.socialIntegration prepareFacebookViewWithText:@"Photo from movie Redirected"
+                                                                              image:image
+                                                                               link:[NSURL URLWithString:@"http://redirectedmovie.com"]]
+                       animated:YES
+                     completion:nil];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+- (SocialIntegration *) socialIntegration {
+    if (!_socialIntegration) {
+        _socialIntegration = [[SocialIntegration alloc] init];
     }
-    return self;
+    
+    return _socialIntegration;
 }
 
 - (void)viewDidLoad

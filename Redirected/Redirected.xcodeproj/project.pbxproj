@@ -35,7 +35,6 @@
 		60D127FC18521B7A0086A8D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D127D818521B7A0086A8D4 /* UIKit.framework */; };
 		60D1280418521B7A0086A8D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D1280218521B7A0086A8D4 /* InfoPlist.strings */; };
 		60D1280618521B7A0086A8D4 /* RedirectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D1280518521B7A0086A8D4 /* RedirectedTests.m */; };
-		F127CEF8185E065A00B66CB0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F127CEF7185E065A00B66CB0 /* ImageViewController.m */; };
 		F19C16411854DCC100740B2C /* ActorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16401854DCC100740B2C /* ActorInfo.m */; };
 		F19C16441854DFAB00740B2C /* Actors.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16431854DFAB00740B2C /* Actors.m */; };
 		F19C16471855002F00740B2C /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C16461855002F00740B2C /* ActorDetailViewController.m */; };
@@ -44,7 +43,6 @@
 		F19EE87018578804000DCBE4 /* QuoteGeneratorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE86F18578804000DCBE4 /* QuoteGeneratorController.m */; };
 		F19EE872185798A5000DCBE4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19EE871185798A5000DCBE4 /* Social.framework */; };
 		F19EF312185DB22B00F6B21F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF311185DB22B00F6B21F /* InfoViewController.m */; };
-		F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EF315185DB6EC00F6B21F /* GalleryViewController.m */; };
 		F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC4E941858F55B00E90EBD /* VideoViewController.m */; };
 		F1DFBE0D185370950005304B /* ActorListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBE0C185370950005304B /* ActorListController.m */; };
 		F1DFBFF818537EE40005304B /* SocialIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DFBFF718537EE40005304B /* SocialIntegration.m */; };
@@ -176,8 +174,6 @@
 		60D1280118521B7A0086A8D4 /* RedirectedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedirectedTests-Info.plist"; sourceTree = "<group>"; };
 		60D1280318521B7A0086A8D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60D1280518521B7A0086A8D4 /* RedirectedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedirectedTests.m; sourceTree = "<group>"; };
-		F127CEF6185E065A00B66CB0 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		F127CEF7185E065A00B66CB0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		F19C163F1854DCC100740B2C /* ActorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorInfo.h; sourceTree = "<group>"; };
 		F19C16401854DCC100740B2C /* ActorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorInfo.m; sourceTree = "<group>"; };
 		F19C16421854DFAB00740B2C /* Actors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actors.h; sourceTree = "<group>"; };
@@ -193,8 +189,6 @@
 		F19EE871185798A5000DCBE4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F19EF310185DB22B00F6B21F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		F19EF311185DB22B00F6B21F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		F19EF314185DB6EC00F6B21F /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
-		F19EF315185DB6EC00F6B21F /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		F1AC4E8A1858DA6A00E90EBD /* Press Serif Cool.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Press Serif Cool.ttf"; sourceTree = "<group>"; };
 		F1AC4E931858F55B00E90EBD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = ../VideoViewController.h; sourceTree = "<group>"; };
 		F1AC4E941858F55B00E90EBD /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = ../VideoViewController.m; sourceTree = "<group>"; };
@@ -472,10 +466,6 @@
 				F1EA6531185F6F0700EBF4F5 /* GalleryDelegate.m */,
 				F1EA6533185F875A00EBF4F5 /* ImagesViewController.h */,
 				F1EA6534185F875A00EBF4F5 /* ImagesViewController.m */,
-				F19EF314185DB6EC00F6B21F /* GalleryViewController.h */,
-				F19EF315185DB6EC00F6B21F /* GalleryViewController.m */,
-				F127CEF6185E065A00B66CB0 /* ImageViewController.h */,
-				F127CEF7185E065A00B66CB0 /* ImageViewController.m */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -780,7 +770,6 @@
 				F1EA6526185F6E7800EBF4F5 /* SDWebImageDecoder.m in Sources */,
 				F1EA64C7185F6E5000EBF4F5 /* MWPhoto.m in Sources */,
 				F1EA6520185F6E7800EBF4F5 /* PSTGridLayoutSection.m in Sources */,
-				F127CEF8185E065A00B66CB0 /* ImageViewController.m in Sources */,
 				F19E69A6185A30AC00B2CAB3 /* Quote.m in Sources */,
 				F1AC4E951858F55B00E90EBD /* VideoViewController.m in Sources */,
 				60D127E518521B7A0086A8D4 /* AppDelegate.m in Sources */,
@@ -820,7 +809,6 @@
 				F1EA6516185F6E7800EBF4F5 /* PSTCollectionViewCell.m in Sources */,
 				F1EA652F185F6E7800EBF4F5 /* UIImageView+WebCache.m in Sources */,
 				F1EA6524185F6E7800EBF4F5 /* SDImageCache.m in Sources */,
-				F19EF316185DB6EC00F6B21F /* GalleryViewController.m in Sources */,
 				F1EA6512185F6E7800EBF4F5 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
