@@ -5,8 +5,9 @@
 #import "ActorDetailViewController.h"
 
 
-@interface ActorListController ()
+@interface ActorListController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *actorTable;
+@property (strong, nonatomic) ActorInfo *selectedActor;
 @end
 
 @implementation ActorListController
@@ -37,9 +38,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"actorCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
-    }
 
     ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
     
@@ -54,13 +52,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //ActorInfo *actor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
+    self.selectedActor = [[[Actors all] allValues] objectAtIndex: indexPath.row];
     
-    // TODO
+    [self performSegueWithIdentifier:@"ActorInfo" sender:self];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // TODO set required actor
+    [segue.destinationViewController setActorInfo:self.selectedActor];
 }
 
 

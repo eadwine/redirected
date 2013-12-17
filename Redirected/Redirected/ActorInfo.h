@@ -11,6 +11,7 @@
 @interface ActorInfo : NSObject
 
 @property NSString *actorName;
+@property NSDate *birthDate;
 @property NSString *roleName;
 @property NSArray *quotes;
 @property NSInteger movieCount;
