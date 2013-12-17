@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface ActorListController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ActorListController : UIViewController
 
 @end

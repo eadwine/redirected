@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActorInfo.h"
 
-@interface ActorDetailViewController : UIViewController
-
+@interface ActorDetailViewController : UITableViewController
+@property(strong, nonatomic) ActorInfo *actorInfo;
 @end
