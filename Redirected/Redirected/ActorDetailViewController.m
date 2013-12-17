@@ -9,6 +9,7 @@
 #import "ActorDetailViewController.h"
 
 @interface ActorDetailViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *photoView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *birthDateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *aboutLabel;
@@ -21,6 +22,14 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
+    
+    NSURL *url = [NSURL URLWithString: self.actorInfo.remotePictureUrl];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    self.photoView.contentMode = UIViewContentModeScaleAspectFit;
+    self.photoView.image = [[UIImage alloc] initWithData:data];
+    //self.photoView.bounds = CGRectMake(0, 0, self.photoView.image.size.width, self.photoView.image.size.height);
+    
     
     self.nameLabel.text = self.actorInfo.actorName? self.actorInfo.actorName : @"-";
     if (self.actorInfo.birthDate) {
